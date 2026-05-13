@@ -1154,6 +1154,8 @@ select {
   margin-top: 1.6rem;
 }
 
+
+
 .contact-link-item {
   display: grid;
   gap: 0.25rem;
@@ -1166,6 +1168,28 @@ select {
     transform 0.25s ease,
     background 0.25s ease,
     border-color 0.25s ease;
+}
+
+.btn-whatsapp {
+  background: var(--accent-ruby);
+  color: #fffaf6;
+  border-color: var(--accent-ruby);
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus-visible {
+  background: #842131;
+  border-color: #842131;
+  color: #fffaf6;
+}
+
+.contact-link-item--whatsapp {
+  background: rgba(157, 43, 61, 0.22);
+  border-color: rgba(214, 172, 120, 0.34);
+}
+
+.contact-link-item--whatsapp span {
+  color: var(--accent-ochre);
 }
 
 .contact-link-item:hover,
@@ -1294,6 +1318,7 @@ select {
 .image-modal-close:focus-visible {
   background: var(--bg-soft);
 }
+
 
 @media (max-width: 1120px) {
   .projects-grid,
