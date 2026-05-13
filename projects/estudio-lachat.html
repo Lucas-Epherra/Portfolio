@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Estudio Jurídico Lachat | Caso de estudio | Lucas Epherra</title>
+
+    <meta
+      name="description"
+      content="Caso de estudio del sitio web de Estudio Jurídico Lachat, proyecto desarrollado por Lucas Epherra con Next.js, TypeScript, Tailwind CSS, Supabase, Resend y Vercel."
+    />
+    <meta
+      name="keywords"
+      content="Estudio Jurídico Lachat, caso de estudio, Lucas Epherra, frontend developer, Next.js, TypeScript, Tailwind CSS, Supabase, Resend, Vercel"
+    />
+    <meta name="author" content="Lucas Epherra" />
+    <meta name="theme-color" content="#F8F5F0" />
+
+    <link
+      rel="canonical"
+      href="https://www.lucasepherra.com.ar/projects/estudio-lachat.html"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Estudio Jurídico Lachat | Caso de estudio"
+    />
+    <meta
+      property="og:description"
+      content="Caso de estudio de un sitio profesional para estudio jurídico, desarrollado con Next.js, TypeScript, Tailwind CSS, Supabase, Resend y Vercel."
+    />
+    <meta
+      property="og:url"
+      content="https://www.lucasepherra.com.ar/projects/estudio-lachat.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.lucasepherra.com.ar/assets/projects/estudio-lachat.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Lucas Epherra Portfolio" />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Estudio Jurídico Lachat | Caso de estudio"
+    />
+    <meta
+      name="twitter:description"
+      content="Proyecto frontend real desarrollado con Next.js, TypeScript, Tailwind CSS, Supabase, Resend y Vercel."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lucasepherra.com.ar/assets/projects/estudio-lachat.jpg"
+    />
+
+    <!-- Fonts and styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="../index.html#home" class="brand" aria-label="Ir al inicio">
+          <strong>LUCAS EPHERRA</strong>
+          <span>Frontend Developer</span>
+        </a>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
+          Menú
+        </button>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html#home">Inicio</a></li>
+            <li><a href="../index.html#about">Sobre mí</a></li>
+            <li><a href="../index.html#services">Servicios</a></li>
+            <li><a href="../index.html#process">Proceso</a></li>
+            <li><a href="../index.html#projects">Proyectos</a></li>
+            <li><a href="../index.html#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="case-study-main">
+      <section class="case-hero" aria-labelledby="case-title">
+        <div class="container case-hero-grid">
+          <div class="case-hero-content">
+            <a class="case-back-link" href="../index.html#projects">
+              ← Volver a proyectos
+            </a>
+
+            <span class="section-kicker">Caso de estudio</span>
+
+            <h1 id="case-title">Estudio Jurídico Lachat</h1>
+
+            <p class="case-hero-lead">
+              Sitio web profesional para un estudio jurídico, desarrollado para
+              presentar servicios legales, generar confianza y facilitar la
+              recepción de consultas online.
+            </p>
+
+            <p>
+              El proyecto comenzó como una landing en React.js y Tailwind CSS, y
+              luego fue migrado a Next.js con TypeScript para mejorar su
+              estructura, escalabilidad y mantenibilidad.
+            </p>
+
+            <div class="case-actions" aria-label="Enlaces principales">
+              <a
+                class="project-link project-link--primary"
+                href="https://www.estudiolachat.com.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver sitio online
+              </a>
+
+              <a
+                class="project-link"
+                href="https://github.com/Lucas-Epherra/estudio-lachat-next"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver repositorio
+              </a>
+            </div>
+          </div>
+
+          <figure class="case-hero-media">
+            <img
+              src="../assets/projects/estudio-lachat.jpg"
+              alt="Captura del sitio web Estudio Jurídico Lachat"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="summary-title">
+        <div class="container">
+          <div class="case-summary-grid">
+            <article class="case-summary-card">
+              <span>Tipo de proyecto</span>
+              <strong>Sitio profesional / landing comercial</strong>
+            </article>
+
+            <article class="case-summary-card">
+              <span>Rol</span>
+              <strong>Frontend Developer</strong>
+            </article>
+
+            <article class="case-summary-card">
+              <span>Stack principal</span>
+              <strong>Next.js · TypeScript · Tailwind CSS</strong>
+            </article>
+
+            <article class="case-summary-card">
+              <span>Estado</span>
+              <strong>Publicado en producción</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="context-title">
+        <div class="container case-two-columns">
+          <div>
+            <span class="section-kicker">Contexto</span>
+            <h2 id="context-title">El problema</h2>
+          </div>
+
+          <div class="case-copy">
+            <p>
+              El estudio necesitaba una presencia web profesional que
+              transmitiera confianza, explicara con claridad sus servicios y
+              permitiera recibir consultas de potenciales clientes de forma
+              simple.
+            </p>
+
+            <p>
+              El objetivo no era solamente construir una landing visualmente
+              atractiva, sino crear una herramienta funcional que ayudara a
+              ordenar el primer contacto con personas interesadas en recibir
+              asesoramiento legal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="goals-title"
+      >
+        <div class="container">
+          <div class="case-section-heading">
+            <span class="section-kicker">Objetivos</span>
+            <h2 id="goals-title">Qué tenía que resolver el proyecto</h2>
+            <p>
+              La prioridad fue construir una solución clara, accesible y útil
+              para una necesidad real: recibir consultas legales de manera
+              ordenada.
+            </p>
+          </div>
+
+          <div class="case-card-grid">
+            <article class="case-info-card">
+              <span>01</span>
+              <h3>Presencia profesional</h3>
+              <p>
+                Presentar el estudio jurídico con una estética sobria, confiable
+                y coherente con el rubro legal.
+              </p>
+            </article>
+
+            <article class="case-info-card">
+              <span>02</span>
+              <h3>Captación de consultas</h3>
+              <p>
+                Facilitar que potenciales clientes puedan iniciar contacto de
+                forma clara desde el sitio.
+              </p>
+            </article>
+
+            <article class="case-info-card">
+              <span>03</span>
+              <h3>Flujo funcional</h3>
+              <p>
+                Implementar formulario, adjuntos, notificaciones y registro de
+                datos para seguimiento posterior.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="solution-title">
+        <div class="container case-two-columns">
+          <div>
+            <span class="section-kicker">Solución</span>
+            <h2 id="solution-title">Qué desarrollé</h2>
+          </div>
+
+          <div class="case-copy">
+            <p>
+              Desarrollé un sitio web profesional orientado a la captación de
+              consultas legales. La interfaz fue pensada con una estética
+              editorial y sobria, priorizando la legibilidad, la confianza y la
+              claridad en la navegación.
+            </p>
+
+            <p>
+              La solución incluye una landing principal con secciones
+              informativas, llamadas a la acción, formulario de consulta, carga
+              de archivos, notificaciones por email y registro automático de
+              datos para facilitar la gestión posterior de los contactos
+              recibidos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="features-title"
+      >
+        <div class="container">
+          <div class="case-section-heading">
+            <span class="section-kicker">Funcionalidades</span>
+            <h2 id="features-title">Características principales</h2>
+          </div>
+
+          <div class="case-feature-list">
+            <article>
+              <h3>Landing responsive</h3>
+              <p>
+                Diseño adaptado a mobile y desktop, con jerarquía clara y foco
+                en conversión.
+              </p>
+            </article>
+
+            <article>
+              <h3>Formulario de consulta</h3>
+              <p>
+                Campos estructurados para ordenar la información inicial enviada
+                por potenciales clientes.
+              </p>
+            </article>
+
+            <article>
+              <h3>Carga de archivos</h3>
+              <p>
+                Posibilidad de adjuntar documentación relevante al enviar una
+                consulta.
+              </p>
+            </article>
+
+            <article>
+              <h3>Persistencia en Supabase</h3>
+              <p>
+                Registro de consultas y archivos para conservar los datos del
+                contacto.
+              </p>
+            </article>
+
+            <article>
+              <h3>Email automático</h3>
+              <p>
+                Notificaciones mediante Resend para avisar cuando ingresa una
+                nueva consulta.
+              </p>
+            </article>
+
+            <article>
+              <h3>Registro en Google Sheets</h3>
+              <p>
+                Automatización para centralizar los leads en una herramienta
+                simple de revisar.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="stack-title">
+        <div class="container case-two-columns">
+          <div>
+            <span class="section-kicker">Stack</span>
+            <h2 id="stack-title">Tecnologías utilizadas</h2>
+          </div>
+
+          <div>
+            <div class="case-stack-group">
+              <h3>Frontend</h3>
+              <div class="project-stack">
+                <span>Next.js</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div class="case-stack-group">
+              <h3>Servicios e integraciones</h3>
+              <div class="project-stack">
+                <span>Supabase</span>
+                <span>Resend</span>
+                <span>Google Sheets</span>
+              </div>
+            </div>
+
+            <div class="case-stack-group">
+              <h3>Deploy e infraestructura</h3>
+              <div class="project-stack">
+                <span>Vercel</span>
+                <span>Dominio propio</span>
+                <span>SEO básico</span>
+                <span>Open Graph</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="migration-title"
+      >
+        <div class="container case-two-columns">
+          <div>
+            <span class="section-kicker">Migración</span>
+            <h2 id="migration-title">De React.js a Next.js con TypeScript</h2>
+          </div>
+
+          <div class="case-copy">
+            <p>
+              La primera versión fue desarrollada con React.js y Tailwind CSS.
+              Esa etapa permitió validar la estructura visual, el contenido
+              principal y la experiencia general del sitio.
+            </p>
+
+            <p>
+              Después de la primera entrega, decidí migrar el proyecto a Next.js
+              con TypeScript para mejorar la arquitectura, ordenar mejor los
+              componentes, aprovechar una estructura más escalable y acercar el
+              proyecto a un estándar más profesional.
+            </p>
+
+            <p>
+              La migración permitió trabajar con una base más sólida para
+              futuras mejoras, mantener una mejor separación de
+              responsabilidades y reducir deuda técnica desde etapas tempranas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="decisions-title">
+        <div class="container">
+          <div class="case-section-heading">
+            <span class="section-kicker">Decisiones técnicas</span>
+            <h2 id="decisions-title">
+              Criterios aplicados durante el desarrollo
+            </h2>
+          </div>
+
+          <div class="case-decision-list">
+            <article>
+              <h3>Arquitectura más mantenible</h3>
+              <p>
+                Separé componentes reutilizables, secciones principales y datos
+                del contenido para evitar duplicación y facilitar futuras
+                modificaciones.
+              </p>
+            </article>
+
+            <article>
+              <h3>TypeScript para mayor seguridad</h3>
+              <p>
+                Incorporé tipado para reducir errores en props, estructuras de
+                datos y componentes.
+              </p>
+            </article>
+
+            <article>
+              <h3>Integraciones simples para el cliente</h3>
+              <p>
+                Usé Supabase, Resend y Google Sheets para que el flujo de
+                consultas fuera funcional sin depender de herramientas
+                complejas.
+              </p>
+            </article>
+
+            <article>
+              <h3>Producción real</h3>
+              <p>
+                Configuré deploy, dominio propio, favicon, metadatos, SEO básico
+                y Open Graph para que el sitio quedara listo para compartir.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="result-title"
+      >
+        <div class="container case-result-card">
+          <span class="section-kicker">Resultado</span>
+
+          <h2 id="result-title">
+            Sitio publicado con dominio propio y flujo de contacto funcional
+          </h2>
+
+          <p>
+            El resultado fue un sitio web profesional publicado en producción,
+            con dominio propio y un flujo de contacto funcional. El proyecto no
+            quedó solamente como una landing estática, sino como una herramienta
+            real de captación y organización de consultas para el estudio.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="learning-title">
+        <div class="container case-two-columns">
+          <div>
+            <span class="section-kicker">Aprendizajes</span>
+            <h2 id="learning-title">Qué me dejó este proyecto</h2>
+          </div>
+
+          <div class="case-copy">
+            <p>
+              Este proyecto me permitió entender mejor la diferencia entre un
+              proyecto de práctica y una entrega real.
+            </p>
+
+            <p>
+              En un proyecto real, cada decisión tiene impacto: la claridad del
+              contenido, la ubicación de los botones, el comportamiento
+              responsive, los formularios, los errores, los emails, el dominio,
+              el deploy y los detalles finales.
+            </p>
+
+            <p>
+              También reforcé la importancia de construir soluciones simples,
+              mantenibles y orientadas a una necesidad concreta, en lugar de
+              sumar complejidad innecesaria.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="case-section case-final-cta"
+        aria-labelledby="links-title"
+      >
+        <div class="container case-final-card">
+          <div>
+            <span class="section-kicker">Links</span>
+            <h2 id="links-title">Ver proyecto y código</h2>
+            <p>
+              El proyecto está disponible en producción y el repositorio
+              contiene la versión migrada a Next.js con TypeScript.
+            </p>
+          </div>
+
+          <div class="case-actions">
+            <a
+              class="project-link project-link--primary"
+              href="https://www.estudiolachat.com.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sitio en producción
+            </a>
+
+            <a
+              class="project-link"
+              href="https://github.com/Lucas-Epherra/estudio-lachat-next"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repositorio
+            </a>
+
+            <a class="project-link" href="../index.html#contact"> Contacto </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Lucas Epherra · Portfolio</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuButton = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
+
+      if (menuButton && navLinks) {
+        menuButton.addEventListener("click", () => {
+          const isOpen = navLinks.classList.toggle("is-open");
+
+          menuButton.setAttribute("aria-expanded", String(isOpen));
+          menuButton.textContent = isOpen ? "Cerrar" : "Menú";
+        });
+      }
+    </script>
+  </body>
+</html>
