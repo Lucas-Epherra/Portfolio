@@ -8,14 +8,16 @@
 
     <meta
       name="description"
-      content="Portfolio de Lucas Epherra, frontend developer junior con proyectos en React y JavaScript, interfaces responsivas, funcionales y intuitivas."
+      content="Portfolio de Lucas Epherra, Frontend Developer especializado en React, Next.js, TypeScript, Tailwind CSS y desarrollo de interfaces web responsivas."
     />
     <meta
       name="keywords"
-      content="Lucas Epherra, frontend developer, React, JavaScript, portfolio, web developer"
+      content="Lucas Epherra, frontend developer, React, Next.js, TypeScript, Tailwind CSS, JavaScript, portfolio, web developer"
     />
     <meta name="author" content="Lucas Epherra" />
     <meta name="theme-color" content="#0f0f10" />
+
+    <link rel="canonical" href="https://www.lucasepherra.com.ar/" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
@@ -32,15 +34,12 @@
     <meta property="og:title" content="Lucas Epherra | Frontend Developer" />
     <meta
       property="og:description"
-      content="Portfolio frontend con proyectos en HTML, CSS, JavaScript y React."
+      content="Portfolio frontend con proyectos en React, Next.js, TypeScript, Tailwind CSS y soluciones web reales."
     />
-    <meta
-      property="og:url"
-      content="https://lucas-epherra.github.io/Portfolio/"
-    />
+    <meta property="og:url" content="https://www.lucasepherra.com.ar/" />
     <meta
       property="og:image"
-      content="https://lucas-epherra.github.io/Portfolio/assets/preview/portfolio-cover.jpg"
+      content="https://www.lucasepherra.com.ar/assets/preview/portfolio-cover.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -52,13 +51,14 @@
     <meta name="twitter:title" content="Lucas Epherra | Frontend Developer" />
     <meta
       name="twitter:description"
-      content="Portfolio frontend con proyectos en HTML, CSS, JavaScript y React."
+      content="Portfolio frontend con proyectos en React, Next.js, TypeScript, Tailwind CSS y soluciones web reales."
     />
     <meta
       name="twitter:image"
-      content="https://lucas-epherra.github.io/Portfolio/assets/preview/portfolio-cover.jpg"
+      content="https://www.lucasepherra.com.ar/assets/preview/portfolio-cover.jpg"
     />
 
+    <!-- Fonts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,40 +67,53 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <!-- body -->
+
   <body>
-    <!-- navbar -->
     <header class="nav">
       <div class="container nav-inner">
-        <a href="#home" class="brand">
+        <a href="#home" class="brand" aria-label="Ir al inicio">
           <strong>LUCAS EPHERRA</strong>
           <span>Frontend Developer</span>
         </a>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
           Menú
         </button>
 
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <!-- contenido principal -->
+
     <main>
       <section class="hero container" id="home">
         <div class="hero-grid">
           <article class="hero-copy fade-up">
-            <span class="eyebrow">Portfolio · HTML / CSS / JavaScript</span>
+            <span class="eyebrow">Portfolio · React / Next.js / TypeScript</span>
+
             <h1 class="hero-title">
               Frontend claro,
               <br />moderno y <br />funcional.
             </h1>
+
             <p class="hero-description">
-              Soy Lucas Epherra, desarrollador frontend junior. Me enfoco en construir interfaces limpias, responsivas y funcionales con HTML, CSS, JavaScript y React, priorizando la claridad visual, la mantenibilidad y una buena experiencia de usuario.
+              Soy Lucas Epherra, Frontend Developer. Me enfoco en construir
+              interfaces limpias, responsivas y funcionales con React, Next.js,
+              TypeScript, JavaScript y Tailwind CSS, priorizando la claridad
+              visual, la mantenibilidad y una buena experiencia de usuario.
             </p>
 
             <div class="hero-actions">
@@ -110,16 +123,17 @@
                 class="btn btn-secondary"
                 href="https://github.com/Lucas-Epherra"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 GitHub
               </a>
+
               <a
                 class="btn btn-secondary"
                 href="https://www.linkedin.com/in/lucas-epherra/"
                 target="_blank"
-                aria-label="LinkedIn"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="Visitar perfil de LinkedIn"
               >
                 LinkedIn
               </a>
@@ -128,16 +142,17 @@
                 class="btn btn-outline"
                 href="./assets/cv/lucas-epherra-frontend-cv.pdf"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 download
               >
                 Descargar CV (Español)
               </a>
+
               <a
                 class="btn btn-outline"
-                href="./assets/cv/lucas-epherra-frontend-ingles-cv.pdf"
+                href="./assets/cv/lucas-epherra-frontend-english-cv.pdf"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 download
               >
                 Download CV (English)
@@ -148,7 +163,11 @@
           <aside class="hero-card fade-up" aria-hidden="true">
             <div class="mockup">
               <div class="mockup-top">
-                <div class="dots"><span></span><span></span><span></span></div>
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
 
               <div class="mockup-grid">
@@ -195,43 +214,61 @@
               />
             </div>
 
-            <h3>Sobre mí</h3>
+            <h2>Sobre mí</h2>
+
             <p>
-             Vengo desarrollando proyectos propios en los que aplico consumo de APIs, autenticación, rutas protegidas, componentes reutilizables y diseño responsive. Actualmente busco mi primera oportunidad como desarrollador frontend, con el objetivo de seguir creciendo y aportar valor en un entorno profesional.
+              Vengo desarrollando proyectos propios, colaborativos y
+              profesionales donde aplico React, Next.js, TypeScript, consumo de
+              APIs, autenticación, formularios, rutas protegidas,
+              automatizaciones, componentes reutilizables y diseño responsive.
+              Actualmente busco mi primera oportunidad como desarrollador
+              frontend, con el objetivo de seguir creciendo y aportar valor en
+              un entorno profesional.
             </p>
 
             <div class="about-meta">
               <span class="pill">React</span>
-              <span class="pill">JavaScript</span>
-              <span class="pill">Responsive Design</span>
-              <span class="pill">APIs REST</span>
+              <span class="pill">Next.js</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Tailwind CSS</span>
+              <span class="pill">Supabase</span>
             </div>
           </article>
 
           <article class="card-light fade-up">
-            <h3 class="skills-title">Habilidades</h3>
+            <h2 class="skills-title">Habilidades</h2>
+
             <p>
-              Tecnologías y herramientas orientadas al desarrollo de interfaces modernas, responsivas y mantenibles, con foco en claridad visual, reutilización de componentes y buenas prácticas de desarrollo.
+              Tecnologías y herramientas orientadas al desarrollo de interfaces
+              modernas, responsivas y mantenibles, con foco en claridad visual,
+              reutilización de componentes y buenas prácticas de desarrollo.
             </p>
 
             <div class="skills-section" id="skills">
               <div class="skills-grid">
                 <div class="skills-card">
                   <h3>Stack principal</h3>
+
                   <div class="skills-tags">
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
                     <span>React</span>
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind CSS</span>
                   </div>
                 </div>
 
                 <div class="skills-card">
                   <h3>Herramientas y tecnologías</h3>
+
                   <div class="skills-tags">
-                    <span>Bootstrap</span>
-                    <span>Sass</span>
+                    <span>Supabase</span>
                     <span>Firebase</span>
+                    <span>Resend</span>
+                    <span>Vercel</span>
+                    <span>Netlify</span>
                     <span>Git</span>
                     <span>GitHub</span>
                   </div>
@@ -239,12 +276,15 @@
 
                 <div class="skills-card">
                   <h3>Enfoque</h3>
+
                   <div class="skills-tags">
                     <span>Responsive Design</span>
                     <span>APIs REST</span>
+                    <span>Formularios</span>
                     <span>Autenticación</span>
                     <span>Rutas protegidas</span>
                     <span>Componentes reutilizables</span>
+                    <span>SEO básico</span>
                   </div>
                 </div>
               </div>
@@ -258,13 +298,76 @@
           <div class="projects-top projects-top--simple">
             <div>
               <h2 class="section-title">Proyectos</h2>
+
               <p class="section-copy">
-                Tres proyectos donde combiné interfaz, lógica y estructura real.
+                Proyectos donde combiné interfaz, lógica, estructura frontend y
+                despliegue en producción.
               </p>
             </div>
           </div>
 
           <div class="projects-grid" id="projectsGrid">
+            <article class="project-card">
+              <div
+                class="project-thumb"
+                data-full="./assets/projects/estudio-lachat.jpg"
+                data-title="Estudio Jurídico Lachat"
+              >
+                <img
+                  src="./assets/projects/estudio-lachat.jpg"
+                  alt="Captura del sitio web Estudio Jurídico Lachat"
+                  class="project-image"
+                />
+                <span class="project-preview-hint">Ampliar</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag">Next.js</span>
+
+                <h3>Estudio Jurídico Lachat</h3>
+
+                <p class="project-subtitle">
+                  Sitio profesional para estudio jurídico
+                </p>
+
+                <p>
+                  Sitio web profesional desarrollado para un estudio jurídico,
+                  orientado a presentar servicios legales y captar consultas
+                  reales. El proyecto comenzó como una landing en React y
+                  Tailwind CSS, y luego fue migrado a Next.js con TypeScript
+                  para mejorar estructura, escalabilidad y mantenibilidad.
+                </p>
+
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind CSS</span>
+                  <span>Supabase</span>
+                  <span>Vercel</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="project-link project-link--primary"
+                    href="https://www.estudiolachat.com.ar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    class="project-link project-link--primary"
+                    href="https://github.com/Lucas-Epherra/estudio-lachat-next"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
             <article class="project-card">
               <div
                 class="project-thumb"
@@ -281,11 +384,19 @@
 
               <div class="project-content">
                 <span class="project-tag">Dashboard</span>
+
                 <h3>BeachApp</h3>
+
                 <p class="project-subtitle">Dashboard de monitoreo costero</p>
+
                 <p>
-                Dashboard de monitoreo costero diseñado para centralizar información relevante como clima, alertas y estado de playa en una interfaz visual, clara y responsive. El proyecto prioriza la legibilidad, la jerarquía de datos y la experiencia del usuario.
+                  Dashboard de monitoreo costero diseñado para centralizar
+                  información relevante como clima, alertas y estado de playa en
+                  una interfaz visual, clara y responsive. El proyecto prioriza
+                  la legibilidad, la jerarquía de datos y la experiencia del
+                  usuario.
                 </p>
+
                 <div class="project-stack">
                   <span>JavaScript</span>
                   <span>API</span>
@@ -297,7 +408,7 @@
                     class="project-link project-link--primary"
                     href="https://lucas-epherra.github.io/BeachApp/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     Demo
                   </a>
@@ -306,7 +417,7 @@
                     class="project-link project-link--primary"
                     href="https://github.com/Lucas-Epherra/BeachApp"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     Código
                   </a>
@@ -330,12 +441,19 @@
 
               <div class="project-content">
                 <span class="project-tag">CRUD</span>
+
                 <h3>PlayaSegura</h3>
+
                 <p class="project-subtitle">
                   Sistema CRUD para incidencias de guardavidas
                 </p>
+
                 <p>
-                  Sistema CRUD orientado al registro y seguimiento de incidencias del servicio de guardavidas. Fue pensado para resolver una necesidad operativa real, permitiendo cargar, consultar y organizar intervenciones de forma ágil, simple y funcional.
+                  Sistema CRUD orientado al registro y seguimiento de
+                  incidencias del servicio de guardavidas. Fue pensado para
+                  resolver una necesidad operativa real, permitiendo cargar,
+                  consultar y organizar intervenciones de forma ágil, simple y
+                  funcional.
                 </p>
 
                 <div class="project-stack">
@@ -349,15 +467,16 @@
                     class="project-link project-link--primary"
                     href="https://playa-segura.netlify.app/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     Demo
                   </a>
+
                   <a
                     class="project-link project-link--primary"
                     href="https://github.com/Lucas-Epherra/PlayaSegura"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     Código
                   </a>
@@ -381,12 +500,18 @@
 
               <div class="project-content">
                 <span class="project-tag">React</span>
+
                 <h3>Rescue Store</h3>
+
                 <p class="project-subtitle">
                   Ecommerce en React con autenticación y rutas protegidas
                 </p>
+
                 <p>
-                 Aplicación e-commerce desarrollada con React y Firebase, con autenticación, rutas protegidas y arquitectura basada en componentes reutilizables. Fue diseñada para ofrecer una experiencia de usuario moderna, responsive y funcional.
+                  Aplicación e-commerce desarrollada con React y Firebase, con
+                  autenticación, rutas protegidas y arquitectura basada en
+                  componentes reutilizables. Fue diseñada para ofrecer una
+                  experiencia de usuario moderna, responsive y funcional.
                 </p>
 
                 <div class="project-stack">
@@ -400,15 +525,16 @@
                     class="project-link project-link--primary"
                     href="https://rescue-store.netlify.app/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     Demo
                   </a>
+
                   <a
                     class="project-link project-link--primary"
                     href="https://github.com/Lucas-Epherra/rescue-store"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     Código
                   </a>
@@ -423,10 +549,15 @@
         <div class="container contact-grid">
           <article class="card-light fade-up">
             <span class="contact-badge">Disponible</span>
+
             <h2 class="section-title section-title-small">Trabajemos juntos</h2>
 
             <p class="contact-copy-light">
-             Estoy en búsqueda de mi primera oportunidad en IT como desarrollador frontend. Me interesa sumarme a un equipo donde pueda aportar desde el primer día, seguir creciendo profesionalmente y colaborar en la construcción de productos web claros, modernos y funcionales.
+              Estoy en búsqueda de mi primera oportunidad en IT como
+              desarrollador frontend. Me interesa sumarme a un equipo donde
+              pueda aportar desde el primer día, seguir creciendo
+              profesionalmente y colaborar en la construcción de productos web
+              claros, modernos y funcionales.
             </p>
 
             <div class="contact-list">
@@ -459,13 +590,22 @@
               <a
                 href="./assets/cv/lucas-epherra-frontend-cv.pdf"
                 class="btn btn-light-section"
-                >Descargar CV (Español)</a
+                target="_blank"
+                rel="noopener noreferrer"
+                download
               >
+                Descargar CV (Español)
+              </a>
+
               <a
-                href="./assets/cv/lucas-epherra-frontend-ingles-cv.pdf"
+                href="./assets/cv/lucas-epherra-frontend-english-cv.pdf"
                 class="btn btn-light-section"
-                >Download CV (English)</a
+                target="_blank"
+                rel="noopener noreferrer"
+                download
               >
+                Download CV (English)
+              </a>
             </div>
           </article>
 
@@ -473,15 +613,15 @@
             <h2 class="section-title section-title-small">Enlaces</h2>
 
             <p class="section-copy section-copy-reset">
-             Accedé a mis proyectos, repositorios y perfiles profesionales.
+              Accedé a mis proyectos, repositorios y perfiles profesionales.
             </p>
 
-            <div class="socials">
+            <div class="socials" aria-label="Enlaces profesionales">
               <a
                 class="social-link"
                 href="https://github.com/Lucas-Epherra"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="GitHub"
               >
                 GH
@@ -489,9 +629,9 @@
 
               <a
                 class="social-link"
-                href="https://www.linkedin.com/in/lucas-epherra-bb8141183/"
+                href="https://www.linkedin.com/in/lucas-epherra/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
                 in
@@ -499,9 +639,9 @@
 
               <a
                 class="social-link"
-                href="https://lucas-epherra.github.io/Portfolio/"
+                href="https://www.lucasepherra.com.ar/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Portfolio"
               >
                 PF
@@ -532,6 +672,7 @@
         <button
           class="image-modal-close"
           id="imageModalClose"
+          type="button"
           aria-label="Cerrar imagen"
         >
           ×
@@ -548,6 +689,7 @@
         <p>© <span id="currentYear"></span> Lucas Epherra - Portfolio</p>
       </div>
     </footer>
+
     <script src="./js/app.js"></script>
   </body>
 </html>
