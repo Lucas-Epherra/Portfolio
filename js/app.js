@@ -14,14 +14,25 @@ if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
 }
 
+const closeNavigation = () => {
+  if (!menuBtn || !navLinks) return;
+
+  navLinks.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded", "false");
+  menuBtn.textContent = "Menú";
+};
+
 menuBtn?.addEventListener("click", () => {
-  navLinks?.classList.toggle("open");
+  if (!navLinks) return;
+
+  const isOpen = navLinks.classList.toggle("open");
+
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
+  menuBtn.textContent = isOpen ? "Cerrar" : "Menú";
 });
 
 navLinks?.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-  });
+  link.addEventListener("click", closeNavigation);
 });
 
 const observer = new IntersectionObserver(
@@ -41,7 +52,7 @@ const observer = new IntersectionObserver(
 fadeItems.forEach((item) => observer.observe(item));
 
 const openImageModal = (src, title, altText = "") => {
-  if (!imageModal || !imageModalImg || !imageModalTitle) return;
+  if (!imageModal || !imageModalImg || !imageModalTitle || !src) return;
 
   imageModalImg.src = src;
   imageModalImg.alt = altText || title;
@@ -63,13 +74,22 @@ const closeImageModal = () => {
 };
 
 projectThumbs.forEach((thumb) => {
-  thumb.addEventListener("click", () => {
+  const handleOpenPreview = () => {
     const fullImage = thumb.dataset.full;
     const title = thumb.dataset.title || "Vista previa del proyecto";
     const image = thumb.querySelector(".project-image");
     const altText = image?.alt || title;
 
     openImageModal(fullImage, title, altText);
+  };
+
+  thumb.addEventListener("click", handleOpenPreview);
+
+  thumb.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+
+    event.preventDefault();
+    handleOpenPreview();
   });
 });
 
@@ -78,7 +98,7 @@ imageModalBackdrop?.addEventListener("click", closeImageModal);
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
-    navLinks?.classList.remove("open");
+    closeNavigation();
 
     if (imageModal?.classList.contains("is-open")) {
       closeImageModal();

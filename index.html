@@ -8,11 +8,11 @@
 
     <meta
       name="description"
-      content="Portfolio de Lucas Epherra, Frontend Developer especializado en React, Next.js, TypeScript, Tailwind CSS y desarrollo de sitios web profesionales, responsivos y funcionales."
+      content="Portfolio de Lucas Epherra, Frontend Developer especializado en React, Next.js, TypeScript, Tailwind CSS, Supabase, consumo de APIs y desarrollo de interfaces web profesionales, responsivas y funcionales."
     />
     <meta
       name="keywords"
-      content="Lucas Epherra, frontend developer, desarrollo web, sitios web, React, Next.js, TypeScript, Tailwind CSS, JavaScript, portfolio, web developer"
+      content="Lucas Epherra, frontend developer, desarrollo web, sitios web, React, Next.js, TypeScript, Tailwind CSS, Supabase, APIs REST, JavaScript, portfolio, web developer, OpsCore"
     />
     <meta name="author" content="Lucas Epherra" />
     <meta name="theme-color" content="#F8F5F0" />
@@ -34,7 +34,7 @@
     <meta property="og:title" content="Lucas Epherra | Frontend Developer" />
     <meta
       property="og:description"
-      content="Portfolio frontend con proyectos reales, servicios de desarrollo web, React, Next.js, TypeScript y Tailwind CSS."
+      content="Portfolio frontend con proyectos reales, MVPs colaborativos, servicios de desarrollo web, React, Next.js, TypeScript, Tailwind CSS y Supabase."
     />
     <meta property="og:url" content="https://www.lucasepherra.com.ar/" />
     <meta
@@ -51,7 +51,7 @@
     <meta name="twitter:title" content="Lucas Epherra | Frontend Developer" />
     <meta
       name="twitter:description"
-      content="Portfolio frontend con proyectos reales, servicios de desarrollo web, React, Next.js, TypeScript y Tailwind CSS."
+      content="Portfolio frontend con proyectos reales, MVPs colaborativos, servicios de desarrollo web, React, Next.js, TypeScript, Tailwind CSS y Supabase."
     />
     <meta
       name="twitter:image"
@@ -105,19 +105,18 @@
         <div class="hero-grid">
           <article class="hero-copy fade-up">
             <span class="eyebrow"
-              >Portfolio · React / Next.js / TypeScript</span
+              >Portfolio · React / Next.js / TypeScript · Supabase</span
             >
 
             <h1 class="hero-title">
-              Desarrollo sitios web claros, modernos y funcionales.
+              Desarrollo interfaces web claras, modernas y funcionales.
             </h1>
 
             <p class="hero-description">
-              Soy Lucas Epherra, Frontend Developer. Ayudo a profesionales,
-              emprendimientos y pequeños negocios a tener una presencia web
-              clara, responsive y profesional, desarrollando interfaces con foco
-              en diseño, rendimiento, experiencia de usuario y facilidad de
-              contacto.
+              Soy Lucas Epherra, Frontend Developer. Desarrollo sitios,
+              landings e interfaces web con foco en claridad visual,
+              rendimiento, experiencia de usuario e integración con servicios
+              reales como APIs, formularios, autenticación y bases de datos.
             </p>
 
             <div class="hero-actions" aria-label="Acciones principales">
@@ -131,7 +130,7 @@
               </a>
               <a
                 class="btn btn-outline"
-                href="./assets/cv/lucas-epherra-frontend-cv.pdf"
+                href="./assets/cv/lucas-epherra-cv-sistemas-frontend.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -143,7 +142,7 @@
             <div class="hero-trust" aria-label="Datos destacados">
               <span>Deploy en producción</span>
               <span>Diseño responsive</span>
-              <span>Dominio propio</span>
+              <span>Integración con APIs</span>
             </div>
           </article>
 
@@ -155,7 +154,7 @@
                   <span></span>
                   <span></span>
                 </div>
-                <span class="mockup-label">Web profesional</span>
+                <span class="mockup-label">Frontend productivo</span>
               </div>
 
               <div class="mockup-grid">
@@ -207,11 +206,11 @@
             <p>
               Vengo desarrollando proyectos propios, colaborativos y
               profesionales donde aplico React, Next.js, TypeScript, consumo de
-              APIs, autenticación, formularios, rutas protegidas,
-              automatizaciones, componentes reutilizables y diseño responsive.
-              Actualmente busco crecer como desarrollador frontend y también
-              ayudar a profesionales y negocios a construir una presencia web
-              clara y funcional.
+              APIs REST, autenticación, formularios, rutas protegidas,
+              Supabase, automatizaciones, componentes reutilizables y diseño
+              responsive. Actualmente busco crecer como desarrollador frontend
+              y también ayudar a profesionales y negocios a construir una
+              presencia web clara, funcional y mantenible.
             </p>
 
             <div class="about-meta" aria-label="Tecnologías principales">
@@ -220,6 +219,7 @@
               <span class="pill">TypeScript</span>
               <span class="pill">Tailwind CSS</span>
               <span class="pill">Supabase</span>
+              <span class="pill">APIs REST</span>
             </div>
           </article>
 
@@ -243,8 +243,9 @@
                     <span>JavaScript</span>
                     <span>React</span>
                     <span>Next.js</span>
+                    <span>App Router</span>
                     <span>TypeScript</span>
-                    <span>Tailwind CSS</span>
+                    <span>Tailwind CSS v4</span>
                   </div>
                 </div>
 
@@ -256,7 +257,9 @@
                     <span>Firebase</span>
                     <span>Resend</span>
                     <span>Vercel</span>
+                    <span>Render</span>
                     <span>Netlify</span>
+                    <span>Postman</span>
                     <span>Git</span>
                     <span>GitHub</span>
                   </div>
@@ -271,7 +274,9 @@
                     <span>Formularios</span>
                     <span>Autenticación</span>
                     <span>Rutas protegidas</span>
+                    <span>Roles y permisos</span>
                     <span>Componentes reutilizables</span>
+                    <span>Integración Frontend/Backend</span>
                     <span>SEO básico</span>
                   </div>
                 </div>
@@ -499,6 +504,9 @@
                 class="project-thumb"
                 data-full="./assets/projects/estudio-lachat.jpg"
                 data-title="Estudio Jurídico Lachat"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del sitio Estudio Jurídico Lachat"
               >
                 <img
                   src="./assets/projects/estudio-lachat.jpg"
@@ -521,8 +529,9 @@
                   Sitio web profesional desarrollado para un estudio jurídico,
                   orientado a presentar servicios legales y captar consultas
                   reales. El proyecto comenzó como una landing en React y
-                  Tailwind CSS, y luego fue migrado a Next.js con TypeScript
-                  para mejorar estructura, escalabilidad y mantenibilidad.
+                  Tailwind CSS, y luego fue migrado a Next.js con TypeScript,
+                  Supabase y Resend para mejorar estructura, escalabilidad y
+                  flujo de contacto.
                 </p>
 
                 <div class="project-stack">
@@ -530,6 +539,7 @@
                   <span>TypeScript</span>
                   <span>Tailwind CSS</span>
                   <span>Supabase</span>
+                  <span>Resend</span>
                   <span>Vercel</span>
                 </div>
 
@@ -544,7 +554,7 @@
                   </a>
 
                   <a
-                    class="project-link project-link--primary"
+                    class="project-link"
                     href="./projects/estudio-lachat.html"
                   >
                     Caso de estudio
@@ -552,11 +562,77 @@
                 </div>
               </div>
             </article>
+
+            <article class="project-card project-card-featured">
+              <div
+                class="project-thumb"
+                data-full="./assets/projects/opscore.jpg"
+                data-title="OpsCore"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del proyecto OpsCore"
+              >
+                <img
+                  src="./assets/projects/opscore.jpg"
+                  alt="Captura del sistema web OpsCore"
+                  class="project-image"
+                />
+                <span class="project-preview-hint">Ampliar</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag">MVP Colaborativo</span>
+
+                <h3>OpsCore</h3>
+
+                <p class="project-subtitle">
+                  Sistema web para gestión de incidentes operativos
+                </p>
+
+                <p>
+                  Aplicación web desarrollada en equipo para digitalizar el
+                  reporte, seguimiento y resolución de incidentes en entornos
+                  operativos. Participé principalmente en el frontend,
+                  integrando autenticación, roles, rutas protegidas, consumo de
+                  API REST, vistas por perfil, correcciones de QA y mejoras de
+                  rendimiento en listados.
+                </p>
+
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>React</span>
+                  <span>Tailwind CSS v4</span>
+                  <span>API REST</span>
+                  <span>Auth</span>
+                  <span>Vercel</span>
+                  <span>Render</span>
+                </div>
+
+                <div class="project-actions">
+                  <a class="project-link" href="./projects/opscore.html">
+                    Caso de estudio
+                  </a>
+
+                  <a
+                    class="project-link project-link--primary"
+                    href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
             <article class="project-card">
               <div
                 class="project-thumb"
                 data-full="./assets/projects/rescue-store.jpg"
                 data-title="Rescue Store"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del proyecto Rescue Store"
               >
                 <img
                   src="./assets/projects/rescue-store.jpg"
@@ -585,7 +661,8 @@
                 <div class="project-stack">
                   <span>React</span>
                   <span>Firebase</span>
-                  <span>Router</span>
+                  <span>React Router</span>
+                  <span>Netlify</span>
                 </div>
 
                 <div class="project-actions">
@@ -599,7 +676,7 @@
                   </a>
 
                   <a
-                    class="project-link project-link--primary"
+                    class="project-link"
                     href="https://github.com/Lucas-Epherra/rescue-store"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -614,11 +691,14 @@
               <div
                 class="project-thumb"
                 data-full="./assets/projects/playa-segura.jpg"
-                data-title="Registro de Intervenciones"
+                data-title="PlayaSegura"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del proyecto PlayaSegura"
               >
                 <img
                   src="./assets/projects/playa-segura.jpg"
-                  alt="Captura del proyecto Registro de Intervenciones"
+                  alt="Captura del proyecto PlayaSegura"
                   class="project-image"
                 />
                 <span class="project-preview-hint">Ampliar</span>
@@ -645,6 +725,7 @@
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
+                  <span>Netlify</span>
                 </div>
 
                 <div class="project-actions">
@@ -658,8 +739,8 @@
                   </a>
 
                   <a
-                    class="project-link project-link--primary"
-                    href="https://github.com/Lucas-Epherra/PlayaSegura"
+                    class="project-link"
+                    href="https://github.com/Lucas-Epherra/Crud-PlayaSegura-Epherra"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -728,7 +809,7 @@
               </a>
 
               <a
-                href="./assets/cv/lucas-epherra-frontend-cv.pdf"
+                href="./assets/cv/lucas-epherra-cv-sistemas-frontend.pdf"
                 class="btn btn-light-section"
                 target="_blank"
                 rel="noopener noreferrer"
