@@ -1,269 +1,113 @@
 # Lucas Epherra | Frontend Developer Portfolio
 
-Portfolio profesional de Lucas Epherra, Frontend Developer enfocado en construir interfaces claras, responsivas y funcionales con foco en experiencia de usuario, buenas prácticas frontend y entrega en producción.
+Personal frontend portfolio for Lucas Epherra, focused on presenting selected projects, client-facing work, collaborative MVP experience and contact channels for remote frontend opportunities.
 
-## 🌐 Enlaces principales
+## Main links
 
-- **Portfolio:** https://www.lucasepherra.com.ar/
-- **GitHub:** https://github.com/Lucas-Epherra
-- **LinkedIn:** https://www.linkedin.com/in/lucas-epherra/
-- **Email:** lucasepherra@gmail.com
+- Portfolio: https://www.lucasepherra.com.ar/
+- Spanish version: https://www.lucasepherra.com.ar/es/
+- GitHub: https://github.com/Lucas-Epherra
+- LinkedIn: https://www.linkedin.com/in/lucas-epherra/
+- Email: lucasepherra@gmail.com
 
-## 🧠 Sobre el proyecto
+## About this project
 
-Este repositorio contiene mi portfolio personal. El objetivo es presentar mi perfil profesional, mis servicios de desarrollo web y una selección de proyectos propios, colaborativos y reales.
+This repository contains my personal portfolio. The site is built with a simple, fast and maintainable static stack: semantic HTML, CSS and JavaScript.
 
-El sitio está construido de forma simple y mantenible con HTML, CSS y JavaScript, priorizando carga rápida, diseño responsive, accesibilidad básica, buena estructura semántica, metadatos SEO y enlaces claros a proyectos, casos de estudio y contacto.
+The goal is to present my professional profile, selected projects, case studies, freelance services and contact information with good performance, responsive design, accessibility considerations, SEO metadata and Open Graph previews.
 
-## 🛠️ Stack del portfolio
+## Stack
 
-- **HTML5 semántico**
-- **CSS3**
-- **JavaScript**
-- **Responsive Design**
-- **SEO básico**
-- **Open Graph / Social Preview**
-- **Git & GitHub**
-- **GitHub Pages**
-- **Dominio propio**
-
-## 🚀 Stack y herramientas que trabajo actualmente
-
-Además del stack usado para este portfolio, mis proyectos recientes incorporan tecnologías y herramientas como:
-
-- **React**
-- **Next.js / App Router**
-- **TypeScript**
-- **Tailwind CSS v4**
-- **Supabase**
-- **Firebase**
-- **Resend**
-- **APIs REST**
-- **Autenticación y rutas protegidas**
-- **Vercel**
-- **Netlify**
-- **Render**
-- **Postman**
-- **Git / GitHub / Pull Requests**
-
-## 📂 Proyectos destacados
-
-### 1. Estudio Jurídico Lachat
-
-Sitio web profesional desarrollado para un estudio jurídico, orientado a presentar servicios legales, transmitir confianza y captar consultas reales mediante un flujo funcional de contacto.
-
-El proyecto comenzó como una landing en React y Tailwind CSS, y luego fue migrado a Next.js con TypeScript para mejorar la arquitectura, la mantenibilidad y la escalabilidad.
-
-**Tecnologías y herramientas:**
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Supabase
-- Resend
-- Vercel
-- Dominio propio
-
-**Puntos destacados:**
-
-- Proyecto real para cliente.
-- Diseño responsive y estética profesional.
-- Formulario de contacto funcional.
-- Carga de archivos.
-- Persistencia de consultas.
-- Notificaciones por email.
-- Deploy en producción con dominio propio.
-
-**Links:**
-
-- Sitio: https://www.estudiolachat.com.ar/
-- Repositorio: https://github.com/Lucas-Epherra/estudio-lachat-next
-- Caso de estudio: https://www.lucasepherra.com.ar/projects/estudio-lachat.html
-
----
-
-### 2. OpsCore
-
-Sistema web colaborativo para gestión de incidentes operativos en un contexto industrial. El proyecto fue desarrollado como MVP en equipo, con foco en digitalizar el reporte, seguimiento, asignación y resolución de incidentes.
-
-Mi participación estuvo centrada principalmente en el frontend: integración con API REST, autenticación, rutas protegidas, vistas por rol, consumo de endpoints reales, corrección de bugs detectados por QA, mejora de rendimiento en listados y ajustes para producción.
-
-**Tecnologías y herramientas:**
-
-- Next.js
-- React
+- Semantic HTML5
+- CSS3
 - JavaScript
-- Tailwind CSS v4
-- API REST
-- Autenticación
-- Roles y permisos
-- Vercel
-- Render
-- Postman
-- Git / GitHub
-
-**Puntos destacados:**
-
-- MVP operativo desarrollado en equipo.
-- Flujo por roles: operador, supervisor, técnico y manager.
-- Integración frontend/backend con API REST.
-- Rutas protegidas y renderizado condicional por perfil.
-- Optimización de listados pesados.
-- Trabajo con ramas, PRs, QA y despliegue.
-- Caso de estudio propio dentro del portfolio.
-
-**Links:**
-
-- Repositorio: https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development
-- Caso de estudio: https://www.lucasepherra.com.ar/projects/opscore.html
-
-> La demo pública no se prioriza como link principal porque actualmente cae en login. El foco del portfolio está puesto en el caso de estudio y el repositorio.
-
----
-
-### 3. Rescue Store
-
-E-commerce desarrollado con React y Firebase, orientado a una tienda temática de productos vinculados al mundo del rescate y guardavidas.
-
-**Tecnologías y herramientas:**
-
-- React
-- Firebase
-- React Router
-- Netlify
-- CSS
-
-**Puntos destacados:**
-
-- Autenticación con Firebase.
-- Rutas protegidas.
-- Carrito de compras.
-- Arquitectura basada en componentes.
-- Deploy en Netlify.
-
-**Links:**
-
-- Demo: https://rescue-store.netlify.app/
-- Repositorio: https://github.com/Lucas-Epherra/rescue-store
-
----
-
-### 4. PlayaSegura
-
-Aplicación para registrar intervenciones o incidentes vinculados al trabajo operativo de guardavidas. El proyecto conecta mi experiencia como socorrista con soluciones digitales para ordenar información y mejorar el seguimiento.
-
-**Tecnologías y herramientas:**
-
-- React
-- JavaScript
-- CSS
-- Netlify
-
-**Puntos destacados:**
-
-- Registro de intervenciones.
-- Interfaz responsive.
-- Proyecto alineado con experiencia operativa real.
-- Enfoque en organización y trazabilidad de datos.
-
-**Links:**
-
-- Demo: https://playa-segura.netlify.app/
-- Repositorio: https://github.com/Lucas-Epherra/Crud-PlayaSegura-Epherra
-
----
-
-### 5. Beach Monitoring App
-
-Aplicación web para monitoreo de condiciones de playa, desarrollada con JavaScript y consumo de API externa.
-
-**Tecnologías y herramientas:**
-
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-- Open-Meteo API
-- LocalStorage
+- Responsive Design
+- Basic SEO
+- Open Graph / Social Preview
+- Git & GitHub
 - GitHub Pages
+- Custom domain
 
-**Puntos destacados:**
+## Bilingual structure
 
-- Consumo de datos externos.
-- Persistencia simple de ciudad seleccionada.
-- Interfaz responsive.
-- Proyecto vinculado a contexto real de playa.
-
-**Links:**
-
-- Demo: https://lucas-epherra.github.io/Beach-Monitoring-App/
-- Repositorio: https://github.com/Lucas-Epherra/Beach-Monitoring-App
-
-## 📁 Estructura general
+English is the default version for international recruiting and remote job applications.
+Spanish is available under `/es/` for local freelance and Spanish-speaking contacts.
 
 ```txt
 .
+├── index.html                 # English homepage
+├── projects/                  # English case studies
+│   ├── estudio-lachat.html
+│   └── opscore.html
+├── es/                        # Spanish version
+│   ├── index.html
+│   └── projects/
+│       ├── estudio-lachat.html
+│       └── opscore.html
 ├── assets/
-│   ├── cv/
-│   ├── favicon/
-│   ├── preview/
-│   ├── projects/
-│   └── profile.jpg
 ├── css/
 │   └── style.css
 ├── js/
 │   └── app.js
-├── projects/
-│   ├── estudio-lachat.html
-│   └── opscore.html
-├── CNAME
-├── index.html
 └── README.md
 ```
 
-## ▶️ Cómo ejecutar localmente
+## Featured projects
 
-Este portfolio no requiere instalación de dependencias.
+### Estudio Jurídico Lachat
 
-### Opción recomendada
+Real client-facing website for a law firm, focused on service presentation, trust, contact conversion and a functional inquiry flow.
 
-Abrir el proyecto con Visual Studio Code y ejecutar con la extensión **Live Server**.
+Stack: Next.js, React, TypeScript, Tailwind CSS, Supabase, Resend and Vercel.
 
-### Opción simple
+- Live: https://www.estudiolachat.com.ar/
+- Repository: https://github.com/Lucas-Epherra/estudio-lachat-next
+- Case study: https://www.lucasepherra.com.ar/projects/estudio-lachat.html
 
-Abrir directamente el archivo:
+### OpsCore
 
-```txt
-index.html
-```
+Collaborative MVP for operational incident management in an industrial context. The system supports incident reporting, role-based views, assignment, tracking, metrics and frontend/backend integration.
 
-## ✅ Buenas prácticas aplicadas
+Stack: Next.js, React, JavaScript, Tailwind CSS, REST API, authentication, Vercel and Render.
 
-- Estructura semántica con HTML5.
-- Diseño responsive para mobile y desktop.
-- Componentización visual mediante clases reutilizables.
-- Navegación clara.
-- Metadatos SEO.
-- Open Graph para previsualización en redes.
-- Favicon configurado.
-- Imágenes organizadas por sección.
-- Casos de estudio separados por proyecto.
-- Enlaces externos con `target="_blank"` y `rel="noopener noreferrer"`.
+- Repository: https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development
+- Case study: https://www.lucasepherra.com.ar/projects/opscore.html
 
-## 🎯 Objetivo profesional
+### Rescue Store
 
-Busco seguir creciendo como Frontend Developer, participar en proyectos reales y aportar valor desde la construcción de interfaces claras, mantenibles y orientadas a resolver necesidades concretas.
+React e-commerce application with Firebase authentication, protected routes, cart flow and reusable component structure.
 
-Mi perfil combina desarrollo frontend, criterio visual, experiencia operativa y capacidad para trabajar en equipo, integrar APIs, interpretar requerimientos, corregir bugs y llevar funcionalidades a producción.
+- Demo: https://rescue-store.netlify.app/
+- Repository: https://github.com/Lucas-Epherra/rescue-store
 
-## 📫 Contacto
+### PlayaSegura
 
-- **Portfolio:** https://www.lucasepherra.com.ar/
-- **GitHub:** https://github.com/Lucas-Epherra
-- **LinkedIn:** https://www.linkedin.com/in/lucas-epherra/
-- **Email:** lucasepherra@gmail.com
+Application designed to register and track lifeguard service incidents, connecting my operational background with practical digital solutions.
 
----
+- Demo: https://playa-segura.netlify.app/
+- Repository: https://github.com/Lucas-Epherra/Crud-PlayaSegura-Epherra
 
-Si te interesa mi perfil o querés consultar por un proyecto web, podés escribirme desde cualquiera de los canales anteriores.
+## How to run locally
+
+This portfolio does not require dependencies.
+
+Recommended option: open the project with Visual Studio Code and run it using the Live Server extension.
+
+Simple option: open `index.html` directly in the browser.
+
+## Applied practices
+
+- Semantic HTML structure
+- Responsive design for mobile and desktop
+- Clear navigation
+- SEO metadata
+- Open Graph previews
+- Favicon setup
+- Bilingual EN/ES structure
+- Language selector
+- External links with `target="_blank"` and `rel="noopener noreferrer"`
+- Image modal with improved `aria-hidden` / `inert` handling
+
+## Professional goal
+
+I am looking to keep growing as a Frontend Developer, contribute to real products and work with teams that value clear UI implementation, reusable components, API integration, accessibility, maintainability and product-oriented thinking.
