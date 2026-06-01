@@ -1,111 +1,103 @@
 <!doctype html>
-<html lang="es-AR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>OpsCore | Caso de estudio | Lucas Epherra</title>
+    <title>OpsCore | Case Study | Lucas Epherra</title>
 
     <meta
       name="description"
-      content="Caso de estudio de OpsCore, MVP colaborativo para gestión de incidentes operativos. Proyecto desarrollado con Next.js, React, Tailwind CSS, API REST, autenticación, roles, Vercel y Render."
+      content="Case study for OpsCore, a collaborative MVP for operational incident management. Built with Next.js, React, Tailwind CSS, REST API integration, authentication, roles, Vercel and Render."
     />
     <meta
       name="keywords"
-      content="OpsCore, caso de estudio, Lucas Epherra, frontend developer, Next.js, React, Tailwind CSS, API REST, autenticación, roles, Vercel, Render"
+      content="OpsCore, case study, Lucas Epherra, frontend developer, Next.js, React, Tailwind CSS, REST API, authentication, roles, Vercel, Render"
     />
     <meta name="author" content="Lucas Epherra" />
     <meta name="theme-color" content="#F8F5F0" />
 
-    <link
-      rel="canonical"
-      href="https://www.lucasepherra.com.ar/projects/opscore.html"
-    />
+    <link rel="canonical" href="https://www.lucasepherra.com.ar/projects/opscore.html" />
+    <link rel="alternate" hreflang="en" href="https://www.lucasepherra.com.ar/projects/opscore.html" />
+    <link rel="alternate" hreflang="es" href="https://www.lucasepherra.com.ar/es/projects/opscore.html" />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="../assets/favicon/apple-touch-icon.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="OpsCore | Caso de estudio" />
-    <meta
-      property="og:description"
-      content="MVP colaborativo para gestión de incidentes operativos, con frontend integrado a API REST, autenticación, roles, rutas protegidas y mejoras de rendimiento."
-    />
-    <meta
-      property="og:url"
-      content="https://www.lucasepherra.com.ar/projects/opscore.html"
-    />
-    <meta
-      property="og:image"
-      content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg"
-    />
+    <meta property="og:title" content="OpsCore | Case Study" />
+    <meta property="og:description" content="Collaborative MVP for operational incident management with frontend integration, REST API consumption, authentication, roles, protected routes and performance improvements." />
+    <meta property="og:url" content="https://www.lucasepherra.com.ar/projects/opscore.html" />
+    <meta property="og:image" content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Lucas Epherra Portfolio" />
-    <meta property="og:locale" content="es_AR" />
+    <meta property="og:locale" content="en_US" />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="OpsCore | Caso de estudio" />
-    <meta
-      name="twitter:description"
-      content="Proyecto frontend colaborativo desarrollado con Next.js, React, Tailwind CSS, API REST, autenticación, roles, Vercel y Render."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg"
-    />
+    <meta name="twitter:title" content="OpsCore | Case Study" />
+    <meta name="twitter:description" content="Collaborative frontend project built with Next.js, React, Tailwind CSS, REST API integration, authentication, roles, Vercel and Render." />
+    <meta name="twitter:image" content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg" />
 
-    <!-- Fonts and styles -->
+    <script>
+      (() => {
+        const storageKey = "portfolio-theme";
+        const storedTheme = localStorage.getItem(storageKey);
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : prefersDark ? "dark" : "light";
+
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <header class="nav">
       <div class="container nav-inner">
-        <a href="../index.html#home" class="brand" aria-label="Ir al inicio">
+        <a href="../index.html#home" class="brand" aria-label="Go to homepage">
           <strong>LUCAS EPHERRA</strong>
           <span>Frontend Developer</span>
         </a>
 
-        <button
-          class="menu-btn"
-          id="menuBtn"
-          type="button"
-          aria-label="Abrir menú de navegación"
-          aria-controls="navLinks"
-          aria-expanded="false"
-        >
-          Menú
-        </button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false" data-menu-label="Menu" data-close-label="Close">Menu</button>
 
-        <nav aria-label="Navegación principal">
+        <nav aria-label="Main navigation">
           <ul class="nav-links" id="navLinks">
-            <li><a href="../index.html#home">Inicio</a></li>
-            <li><a href="../index.html#about">Sobre mí</a></li>
-            <li><a href="../index.html#services">Servicios</a></li>
-            <li><a href="../index.html#process">Proceso</a></li>
-            <li><a href="../index.html#projects">Proyectos</a></li>
-            <li><a href="../index.html#contact">Contacto</a></li>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#process">Process</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <div class="nav-controls">
+          <div class="language-switch" aria-label="Language selector">
+                    <a class="is-active" href="./opscore.html" hreflang="en" lang="en" aria-current="page">EN</a>
+                    <a href="../es/projects/opscore.html" hreflang="es" lang="es">ES</a>
+                  </div>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            data-dark-label="Dark"
+            data-light-label="Light"
+            data-dark-aria="Switch to dark mode"
+            data-light-aria="Switch to light mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+            <span data-theme-label>Dark</span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -113,47 +105,18 @@
       <section class="case-hero" aria-labelledby="case-title">
         <div class="container case-hero-grid">
           <div class="case-hero-content">
-            <a class="case-back-link" href="../index.html#projects">
-              ← Volver a proyectos
-            </a>
-
-            <span class="section-kicker">Caso de estudio</span>
-
+            <a class="case-back-link" href="../index.html#projects">← Back to projects</a>
+            <span class="section-kicker">Case study</span>
             <h1 id="case-title">OpsCore</h1>
-
-            <p class="case-hero-lead">
-              MVP colaborativo para digitalizar el reporte, seguimiento y
-              resolución de incidentes en entornos operativos.
-            </p>
-
-            <p>
-              El proyecto fue desarrollado en equipo dentro de una simulación
-              profesional, con integración frontend/backend, QA, ramas Git,
-              pull requests, deploy en producción y correcciones sobre feedback
-              real del flujo operativo.
-            </p>
-
-            <div class="case-actions" aria-label="Enlaces principales">
-              <a
-                class="project-link project-link--primary"
-                href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver repositorio
-              </a>
-
-              <a class="project-link" href="../index.html#contact">
-                Contacto
-              </a>
+            <p class="case-hero-lead">Collaborative MVP built to digitize the reporting, tracking and resolution of incidents in operational environments.</p>
+            <p>The project was developed as part of a professional team simulation, including frontend/backend integration, QA feedback, Git branches, pull requests, production deployment and improvements based on real operational flow issues.</p>
+            <div class="case-actions" aria-label="Main links">
+              <a class="project-link project-link--primary" href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development" target="_blank" rel="noopener noreferrer">View repository</a>
+              <a class="project-link" href="../index.html#contact">Contact</a>
             </div>
           </div>
-
           <figure class="case-hero-media">
-            <img
-              src="../assets/projects/opscore.jpg"
-              alt="Captura del sistema web OpsCore"
-            />
+            <img src="../assets/projects/opscore.jpg" alt="Screenshot of the OpsCore web system" width="1200" height="760" loading="eager" decoding="async" />
           </figure>
         </div>
       </section>
@@ -161,392 +124,131 @@
       <section class="case-section" aria-labelledby="summary-title">
         <div class="container">
           <div class="case-summary-grid">
-            <article class="case-summary-card">
-              <span>Tipo de proyecto</span>
-              <strong>MVP web colaborativo</strong>
-            </article>
-
-            <article class="case-summary-card">
-              <span>Rol</span>
-              <strong>Frontend Developer</strong>
-            </article>
-
-            <article class="case-summary-card">
-              <span>Stack principal</span>
-              <strong>Next.js · React · Tailwind CSS</strong>
-            </article>
-
-            <article class="case-summary-card">
-              <span>Estado</span>
-              <strong>MVP operativo</strong>
-            </article>
+            <article class="case-summary-card"><span>Project type</span><strong>Collaborative web MVP</strong></article>
+            <article class="case-summary-card"><span>Role</span><strong>Frontend Developer</strong></article>
+            <article class="case-summary-card"><span>Main stack</span><strong>Next.js · React · Tailwind CSS</strong></article>
+            <article class="case-summary-card"><span>Status</span><strong>Operational MVP</strong></article>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="context-title">
         <div class="container case-two-columns">
-          <div>
-            <span class="section-kicker">Contexto</span>
-            <h2 id="context-title">El problema</h2>
-          </div>
-
+          <div><span class="section-kicker">Context</span><h2 id="context-title">The problem</h2></div>
           <div class="case-copy">
-            <p>
-              En un entorno operativo, los incidentes no alcanzan con ser
-              reportados: necesitan trazabilidad, asignación clara, seguimiento
-              por estado y una forma simple de visualizar qué está pendiente,
-              qué fue resuelto y quién debe actuar.
-            </p>
-
-            <p>
-              El problema principal era ordenar un flujo que normalmente puede
-              quedar disperso entre mensajes, planillas o registros manuales,
-              especialmente cuando intervienen perfiles distintos como operador,
-              supervisor, técnico y manager.
-            </p>
+            <p>In an operational environment, incidents are not enough to simply report. They need traceability, clear assignment, status tracking and a simple way to understand what is pending, what has been solved and who needs to act.</p>
+            <p>The main problem was organizing a workflow that can usually be scattered across messages, spreadsheets or manual records, especially when different profiles are involved: operator, supervisor, technician and manager.</p>
           </div>
         </div>
       </section>
 
-      <section
-        class="case-section case-section-muted"
-        aria-labelledby="goals-title"
-      >
+      <section class="case-section case-section-muted" aria-labelledby="goals-title">
         <div class="container">
           <div class="case-section-heading">
-            <span class="section-kicker">Objetivos</span>
-            <h2 id="goals-title">Qué tenía que resolver el MVP</h2>
-            <p>
-              La prioridad fue construir una herramienta funcional que permitiera
-              recorrer el flujo completo de un incidente desde su creación hasta
-              su resolución.
-            </p>
+            <span class="section-kicker">Goals</span>
+            <h2 id="goals-title">What the MVP needed to solve</h2>
+            <p>The priority was to build a functional tool that supported the full incident flow, from creation to resolution.</p>
           </div>
-
           <div class="case-card-grid">
-            <article class="case-info-card">
-              <span>01</span>
-              <h3>Reporte centralizado</h3>
-              <p>
-                Permitir que un operador registre un incidente con información
-                clara para iniciar el flujo de seguimiento.
-              </p>
-            </article>
-
-            <article class="case-info-card">
-              <span>02</span>
-              <h3>Asignación y seguimiento</h3>
-              <p>
-                Facilitar que el supervisor asigne técnicos y que cada rol vea
-                la información relevante según sus permisos.
-              </p>
-            </article>
-
-            <article class="case-info-card">
-              <span>03</span>
-              <h3>Visibilidad operativa</h3>
-              <p>
-                Mostrar listados, detalles, estados y métricas para entender el
-                avance de los incidentes dentro del sistema.
-              </p>
-            </article>
+            <article class="case-info-card"><span>01</span><h3>Centralized reporting</h3><p>Allow an operator to register an incident with clear information to start the tracking flow.</p></article>
+            <article class="case-info-card"><span>02</span><h3>Assignment and tracking</h3><p>Allow supervisors to assign technicians and ensure each role sees relevant information according to permissions.</p></article>
+            <article class="case-info-card"><span>03</span><h3>Operational visibility</h3><p>Show lists, details, statuses and metrics to understand the progress of incidents inside the system.</p></article>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="solution-title">
         <div class="container case-two-columns">
-          <div>
-            <span class="section-kicker">Solución</span>
-            <h2 id="solution-title">Qué construimos</h2>
-          </div>
-
+          <div><span class="section-kicker">Solution</span><h2 id="solution-title">What we built</h2></div>
           <div class="case-copy">
-            <p>
-              Construimos una aplicación web con frontend en Next.js, consumo de
-              una API REST en Django y vistas diferenciadas por rol. El sistema
-              permite crear incidentes, consultar listados, revisar detalles,
-              asignar técnicos, resolver reportes y acceder a datos operativos.
-            </p>
-
-            <p>
-              Mi trabajo se concentró en la capa frontend: estructura de vistas,
-              integración con endpoints reales, sesión de usuario, permisos por
-              rol, rutas protegidas, visualización de datos, corrección de bugs
-              reportados por QA y ajustes de rendimiento en listados pesados.
-            </p>
+            <p>We built a web application with a Next.js frontend, a Django REST API backend and role-based views. The system allows users to create incidents, browse lists, review details, assign technicians, resolve reports and access operational data.</p>
+            <p>My work focused on the frontend layer: view structure, integration with real endpoints, user session handling, role-based permissions, protected routes, data visualization, QA bug fixes and performance improvements on heavy list views.</p>
           </div>
         </div>
       </section>
 
-      <section
-        class="case-section case-section-muted"
-        aria-labelledby="features-title"
-      >
+      <section class="case-section case-section-muted" aria-labelledby="features-title">
         <div class="container">
-          <div class="case-section-heading">
-            <span class="section-kicker">Funcionalidades</span>
-            <h2 id="features-title">Características principales</h2>
-          </div>
-
+          <div class="case-section-heading"><span class="section-kicker">Features</span><h2 id="features-title">Main features</h2></div>
           <div class="case-feature-list">
-            <article>
-              <h3>Autenticación</h3>
-              <p>
-                Login conectado a backend, persistencia de sesión y lectura del
-                usuario autenticado para renderizar la experiencia correcta.
-              </p>
-            </article>
-
-            <article>
-              <h3>Vistas por rol</h3>
-              <p>
-                Interfaces adaptadas para operador, supervisor, técnico y
-                manager, evitando acciones que no correspondían a cada perfil.
-              </p>
-            </article>
-
-            <article>
-              <h3>Rutas protegidas</h3>
-              <p>
-                Control de acceso a secciones internas para impedir navegación
-                inconsistente cuando no hay sesión válida.
-              </p>
-            </article>
-
-            <article>
-              <h3>Gestión de incidentes</h3>
-              <p>
-                Creación, listado, detalle, asignación de técnico, resolución y
-                lectura de información asociada al incidente.
-              </p>
-            </article>
-
-            <article>
-              <h3>Dashboard y métricas</h3>
-              <p>
-                Visualización de datos operativos para aportar contexto sobre el
-                estado general de los reportes.
-              </p>
-            </article>
-
-            <article>
-              <h3>Correcciones de QA</h3>
-              <p>
-                Ajustes sobre bugs funcionales, permisos, navegación,
-                visualización de tiempos y consistencia entre vistas.
-              </p>
-            </article>
+            <article><h3>Authentication</h3><p>Backend-connected login, session persistence and authenticated user reading to render the correct experience.</p></article>
+            <article><h3>Role-based views</h3><p>Interfaces adapted for operator, supervisor, technician and manager, avoiding actions that did not match each profile.</p></article>
+            <article><h3>Protected routes</h3><p>Access control for internal sections to prevent inconsistent navigation when there is no valid session.</p></article>
+            <article><h3>Incident management</h3><p>Creation, listing, detail view, technician assignment, resolution and reading of information related to each incident.</p></article>
+            <article><h3>Dashboard and metrics</h3><p>Operational data visualization to provide context about the general status of reports.</p></article>
+            <article><h3>QA fixes</h3><p>Adjustments on functional bugs, permissions, navigation, time formatting and consistency between views.</p></article>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="stack-title">
         <div class="container case-two-columns">
+          <div><span class="section-kicker">Stack</span><h2 id="stack-title">Technologies used</h2></div>
           <div>
-            <span class="section-kicker">Stack</span>
-            <h2 id="stack-title">Tecnologías utilizadas</h2>
-          </div>
-
-          <div>
-            <div class="case-stack-group">
-              <h3>Frontend</h3>
-              <div class="project-stack">
-                <span>Next.js</span>
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>Tailwind CSS v4</span>
-              </div>
-            </div>
-
-            <div class="case-stack-group">
-              <h3>Integración</h3>
-              <div class="project-stack">
-                <span>API REST</span>
-                <span>Auth</span>
-                <span>Roles</span>
-                <span>Rutas protegidas</span>
-                <span>Postman</span>
-              </div>
-            </div>
-
-            <div class="case-stack-group">
-              <h3>Deploy y trabajo en equipo</h3>
-              <div class="project-stack">
-                <span>Vercel</span>
-                <span>Render</span>
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Pull Requests</span>
-                <span>QA</span>
-              </div>
-            </div>
+            <div class="case-stack-group"><h3>Frontend</h3><div class="project-stack"><span>Next.js</span><span>React</span><span>JavaScript</span><span>Tailwind CSS v4</span></div></div>
+            <div class="case-stack-group"><h3>Integration</h3><div class="project-stack"><span>REST API</span><span>Auth</span><span>Roles</span><span>Protected routes</span><span>Postman</span></div></div>
+            <div class="case-stack-group"><h3>Deployment and teamwork</h3><div class="project-stack"><span>Vercel</span><span>Render</span><span>Git</span><span>GitHub</span><span>Pull Requests</span><span>QA</span></div></div>
           </div>
         </div>
       </section>
 
-      <section
-        class="case-section case-section-muted"
-        aria-labelledby="role-title"
-      >
+      <section class="case-section case-section-muted" aria-labelledby="role-title">
         <div class="container case-two-columns">
-          <div>
-            <span class="section-kicker">Mi rol</span>
-            <h2 id="role-title">Responsabilidades principales</h2>
-          </div>
-
+          <div><span class="section-kicker">My role</span><h2 id="role-title">Main responsibilities</h2></div>
           <div class="case-copy">
-            <p>
-              Participé como Frontend Developer, tomando tareas de integración,
-              estructura de vistas y ajustes de experiencia de usuario. El foco
-              fue lograr que el MVP dejara de ser una maqueta y funcionara con
-              datos, roles y endpoints reales.
-            </p>
-
-            <p>
-              También trabajé sobre mejoras de navegación, permisos, corrección
-              de bugs detectados por QA, limpieza de flujos inconsistentes y
-              optimización de vistas que cargaban datos de forma demasiado
-              pesada.
-            </p>
+            <p>I participated as a Frontend Developer, taking tasks related to integration, view structure and user experience adjustments. The focus was to move the MVP beyond a mockup and make it work with real data, roles and endpoints.</p>
+            <p>I also worked on navigation improvements, permissions, QA bug fixes, inconsistent flow cleanup and optimization of views that were loading data too heavily.</p>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="decisions-title">
         <div class="container">
-          <div class="case-section-heading">
-            <span class="section-kicker">Decisiones técnicas</span>
-            <h2 id="decisions-title">
-              Criterios aplicados durante el desarrollo
-            </h2>
-          </div>
-
+          <div class="case-section-heading"><span class="section-kicker">Technical decisions</span><h2 id="decisions-title">Criteria applied during development</h2></div>
           <div class="case-decision-list">
-            <article>
-              <h3>Frontend conectado a backend real</h3>
-              <p>
-                Priorizamos el consumo de endpoints reales por encima de datos
-                simulados para validar el flujo completo del producto.
-              </p>
-            </article>
-
-            <article>
-              <h3>Experiencia segmentada por rol</h3>
-              <p>
-                Ajusté navegación, botones y vistas para que cada perfil viera
-                acciones coherentes con sus responsabilidades dentro del sistema.
-              </p>
-            </article>
-
-            <article>
-              <h3>Corrección sobre feedback de QA</h3>
-              <p>
-                El proyecto se fue refinando a partir de reportes concretos,
-                priorizando bugs que bloqueaban flujo o generaban confusión.
-              </p>
-            </article>
-
-            <article>
-              <h3>Optimización de listados pesados</h3>
-              <p>
-                Se trabajó sobre vistas con carga lenta para reducir consultas
-                innecesarias y mejorar la experiencia al navegar datos.
-              </p>
-            </article>
+            <article><h3>Frontend connected to a real backend</h3><p>We prioritized consuming real endpoints instead of mock data to validate the complete product flow.</p></article>
+            <article><h3>Role-segmented experience</h3><p>I adjusted navigation, buttons and views so each profile could access actions aligned with its responsibilities.</p></article>
+            <article><h3>QA-driven fixes</h3><p>The project was refined from concrete reports, prioritizing bugs that blocked the flow or created confusion.</p></article>
+            <article><h3>Heavy list optimization</h3><p>We worked on slow views to reduce unnecessary requests and improve the experience when navigating data.</p></article>
           </div>
         </div>
       </section>
 
-      <section
-        class="case-section case-section-muted"
-        aria-labelledby="result-title"
-      >
+      <section class="case-section case-section-muted" aria-labelledby="result-title">
         <div class="container case-result-card">
-          <span class="section-kicker">Resultado</span>
-
-          <h2 id="result-title">
-            MVP operativo con flujo principal funcional
-          </h2>
-
-          <p>
-            El resultado fue un MVP operativo con autenticación, vistas por rol,
-            reporte de incidentes, asignación, seguimiento, resolución y
-            visualización de datos. Además de la parte técnica, el proyecto me
-            permitió trabajar en una dinámica más cercana a un entorno real:
-            equipo, QA, ramas, PRs, integración frontend/backend y producción.
-          </p>
+          <span class="section-kicker">Result</span>
+          <h2 id="result-title">Operational MVP with the main flow working</h2>
+          <p>The result was an operational MVP with authentication, role-based views, incident reporting, assignment, tracking, resolution and data visualization. Beyond the technical side, the project helped me work in a more realistic environment: team workflow, QA, branches, PRs, frontend/backend integration and production deployment.</p>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="learning-title">
         <div class="container case-two-columns">
-          <div>
-            <span class="section-kicker">Aprendizajes</span>
-            <h2 id="learning-title">Qué me dejó este proyecto</h2>
-          </div>
-
+          <div><span class="section-kicker">Learnings</span><h2 id="learning-title">What I learned from this project</h2></div>
           <div class="case-copy">
-            <p>
-              OpsCore me permitió reforzar habilidades que no siempre aparecen
-              en proyectos individuales: coordinar cambios con backend, adaptar
-              el frontend a respuestas reales de API, trabajar con criterios de
-              QA y tomar decisiones pensando en usuarios con roles distintos.
-            </p>
-
-            <p>
-              También dejó una lección técnica clara: cuando una vista parece
-              lenta, no alcanza con mejorar estilos o estados de carga. Hay que
-              revisar el flujo de datos, evitar trabajo repetido y atacar el
-              cuello de botella real.
-            </p>
+            <p>OpsCore helped me strengthen skills that do not always appear in individual projects: coordinating changes with backend, adapting the frontend to real API responses, working with QA criteria and making decisions for users with different roles.</p>
+            <p>It also left a clear technical lesson: when a view feels slow, improving styles or loading states is not enough. You need to review the data flow, avoid repeated work and address the real bottleneck.</p>
           </div>
         </div>
       </section>
 
-      <section
-        class="case-section case-final-cta"
-        aria-labelledby="links-title"
-      >
+      <section class="case-section case-final-cta" aria-labelledby="links-title">
         <div class="container case-final-card">
           <div>
             <span class="section-kicker">Links</span>
-            <h2 id="links-title">Ver código del proyecto</h2>
-            <p>
-              Muestro el repositorio como referencia técnica. No incluyo la demo
-              pública en esta versión del portfolio porque el acceso cae directo
-              en login y el caso de estudio comunica mejor el alcance real del
-              MVP.
-            </p>
+            <h2 id="links-title">View project code</h2>
+            <p>I show the repository as a technical reference. I do not include the public demo as the main link because the app currently opens directly into login, and this case study communicates the real MVP scope more clearly.</p>
           </div>
-
           <div class="case-actions">
-            <a
-              class="project-link project-link--primary"
-              href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repositorio
-            </a>
-
-            <a class="project-link" href="../index.html#projects">
-              Volver a proyectos
-            </a>
-
-            <a class="project-link" href="../index.html#contact"> Contacto </a>
+            <a class="project-link project-link--primary" href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a class="project-link" href="../index.html#projects">Back to projects</a>
+            <a class="project-link" href="../index.html#contact">Contact</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>© 2026 Lucas Epherra · Portfolio</p>
-      </div>
-    </footer>
-
+    <footer class="footer"><div class="container"><p>© <span id="currentYear"></span> Lucas Epherra · Portfolio</p></div></footer>
     <script src="../js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lucas Epherra | Frontend Developer</title>
+
+    <meta
+      name="description"
+      content="Portfolio de Lucas Epherra, Frontend Developer especializado en React, Next.js, TypeScript, Tailwind CSS, Supabase, consumo de APIs y desarrollo de interfaces web profesionales, responsivas y funcionales."
+    />
+    <meta
+      name="keywords"
+      content="Lucas Epherra, frontend developer, desarrollo web, sitios web, React, Next.js, TypeScript, Tailwind CSS, Supabase, APIs REST, JavaScript, portfolio, web developer, OpsCore"
+    />
+    <meta name="author" content="Lucas Epherra" />
+    <meta name="theme-color" content="#F8F5F0" />
+
+    <link rel="canonical" href="https://www.lucasepherra.com.ar/es/" />
+    <link rel="alternate" hreflang="en" href="https://www.lucasepherra.com.ar/" />
+    <link rel="alternate" hreflang="es" href="https://www.lucasepherra.com.ar/es/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lucas Epherra | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio frontend con proyectos reales, MVPs colaborativos, servicios de desarrollo web, React, Next.js, TypeScript, Tailwind CSS y Supabase."
+    />
+    <meta property="og:url" content="https://www.lucasepherra.com.ar/es/" />
+    <meta
+      property="og:image"
+      content="https://www.lucasepherra.com.ar/assets/preview/portfolio-cover.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Lucas Epherra Portfolio" />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lucas Epherra | Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio frontend con proyectos reales, MVPs colaborativos, servicios de desarrollo web, React, Next.js, TypeScript, Tailwind CSS y Supabase."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lucasepherra.com.ar/assets/preview/portfolio-cover.jpg"
+    />
+
+    <script>
+      (() => {
+        const storageKey = "portfolio-theme";
+        const storedTheme = localStorage.getItem(storageKey);
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : prefersDark ? "dark" : "light";
+
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
+    <!-- Fonts and styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#home" class="brand" aria-label="Ir al inicio">
+          <strong>LUCAS EPHERRA</strong>
+          <span>Frontend Developer</span>
+        </a>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          data-menu-label="Menú"
+          data-close-label="Cerrar"
+        >
+          Menú
+        </button>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#process">Proceso</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <div class="language-switch" aria-label="Selector de idioma">
+                    <a href="../index.html" hreflang="en" lang="en">EN</a>
+                    <a class="is-active" href="./index.html" hreflang="es" lang="es" aria-current="page">ES</a>
+                  </div>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Cambiar a modo oscuro"
+            data-dark-label="Oscuro"
+            data-light-label="Claro"
+            data-dark-aria="Cambiar a modo oscuro"
+            data-light-aria="Cambiar a modo claro"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+            <span data-theme-label>Oscuro</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-grid">
+          <article class="hero-copy fade-up">
+            <span class="eyebrow"
+              >Portfolio · React / Next.js / TypeScript · Supabase</span
+            >
+
+            <h1 class="hero-title">
+              Desarrollo interfaces web claras, modernas y funcionales.
+            </h1>
+
+            <p class="hero-description">
+              Soy Lucas Epherra, Frontend Developer. Desarrollo sitios,
+              landings e interfaces web con foco en claridad visual,
+              rendimiento, experiencia de usuario e integración con servicios
+              reales como APIs, formularios, autenticación y bases de datos.
+            </p>
+
+            <div class="hero-actions" aria-label="Acciones principales">
+              <a class="btn btn-outline" href="#projects">Ver Proyectos</a>
+              <a
+                class="btn btn-whatsapp"
+                href="https://wa.me/542983659649?text=Hola%20Lucas%2C%20vi%20tu%20portfolio%20y%20quiero%20consultarte%20por%20una%20web."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Solicitar Una Web
+              </a>
+              <a
+                class="btn btn-outline"
+                href="../assets/cv/lucas-epherra-cv-english.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                Descargar CV
+              </a>
+            </div>
+
+            <div class="hero-trust" aria-label="Datos destacados">
+              <span>Deploy en producción</span>
+              <span>Diseño responsive</span>
+              <span>Integración con APIs</span>
+            </div>
+          </article>
+
+          <aside class="hero-card fade-up" aria-hidden="true">
+            <div class="mockup">
+              <div class="mockup-top">
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="mockup-label">Frontend productivo</span>
+              </div>
+
+              <div class="mockup-grid">
+                <div class="mockup-panel">
+                  <div class="mockup-chip"></div>
+                  <div class="space-md"></div>
+                  <div class="mockup-line long"></div>
+                  <div class="space-sm"></div>
+                  <div class="mockup-line mid"></div>
+                  <div class="space-sm"></div>
+                  <div class="mockup-line short"></div>
+
+                  <div class="mockup-cards">
+                    <div class="mockup-card"></div>
+                    <div class="mockup-card"></div>
+                  </div>
+                </div>
+
+                <div class="mockup-sidebar">
+                  <div class="bar"><span style="width: 88%"></span></div>
+                  <div class="bar"><span style="width: 80%"></span></div>
+                  <div class="bar"><span style="width: 74%"></span></div>
+                  <div class="bar"><span style="width: 91%"></span></div>
+                </div>
+              </div>
+
+              <div class="mockup-footer">
+                <div class="mockup-line short"></div>
+                <div class="mockup-line mid"></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <article class="card-dark fade-up">
+            <div class="about-photo">
+              <img
+                src="../assets/profile.jpg"
+                alt="Foto de Lucas Epherra"
+                class="profile-image"
+              />
+            </div>
+
+            <h2>Sobre mí</h2>
+
+            <p>
+              Vengo desarrollando proyectos propios, colaborativos y
+              profesionales donde aplico React, Next.js, TypeScript, consumo de
+              APIs REST, autenticación, formularios, rutas protegidas,
+              Supabase, automatizaciones, componentes reutilizables y diseño
+              responsive. Actualmente busco crecer como desarrollador frontend
+              y también ayudar a profesionales y negocios a construir una
+              presencia web clara, funcional y mantenible.
+            </p>
+
+            <div class="about-meta" aria-label="Tecnologías principales">
+              <span class="pill">React</span>
+              <span class="pill">Next.js</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Tailwind CSS</span>
+              <span class="pill">Supabase</span>
+              <span class="pill">APIs REST</span>
+            </div>
+          </article>
+
+          <article class="card-light fade-up">
+            <h2 class="skills-title">Habilidades</h2>
+
+            <p>
+              Tecnologías y herramientas orientadas al desarrollo de interfaces
+              modernas, responsivas y mantenibles, con foco en claridad visual,
+              reutilización de componentes y buenas prácticas de desarrollo.
+            </p>
+
+            <div class="skills-section" id="skills">
+              <div class="skills-grid">
+                <div class="skills-card">
+                  <h3>Stack principal</h3>
+
+                  <div class="skills-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>App Router</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind CSS v4</span>
+                  </div>
+                </div>
+
+                <div class="skills-card">
+                  <h3>Herramientas</h3>
+
+                  <div class="skills-tags">
+                    <span>Supabase</span>
+                    <span>Firebase</span>
+                    <span>Resend</span>
+                    <span>Vercel</span>
+                    <span>Render</span>
+                    <span>Netlify</span>
+                    <span>Postman</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                  </div>
+                </div>
+
+                <div class="skills-card">
+                  <h3>Enfoque</h3>
+
+                  <div class="skills-tags">
+                    <span>Responsive Design</span>
+                    <span>APIs REST</span>
+                    <span>Formularios</span>
+                    <span>Autenticación</span>
+                    <span>Rutas protegidas</span>
+                    <span>Roles y permisos</span>
+                    <span>Componentes reutilizables</span>
+                    <span>Integración Frontend/Backend</span>
+                    <span>SEO básico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="services">
+        <div class="container fade-up">
+          <div class="section-heading">
+            <span class="section-kicker">Servicios</span>
+            <h2 class="section-title">
+              Qué puedo desarrollar para tu proyecto
+            </h2>
+            <p class="section-copy">
+              Desarrollo sitios web profesionales para personas, emprendimientos
+              y negocios que necesitan mostrar sus servicios, generar confianza
+              y recibir consultas de forma clara.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <span class="service-number">01</span>
+              <h3>Landing page profesional</h3>
+              <p>
+                Una página clara y responsive para presentar tu actividad,
+                servicios, información principal y medios de contacto.
+              </p>
+
+              <div class="service-details">
+                <strong>Ideal para</strong>
+                <span>
+                  Profesionales independientes, servicios locales,
+                  emprendimientos o negocios que necesitan presencia online
+                  simple y efectiva.
+                </span>
+              </div>
+
+              <ul class="service-list">
+                <li>Diseño responsive.</li>
+                <li>Secciones principales.</li>
+                <li>Botones de contacto.</li>
+                <li>Integración con WhatsApp o email.</li>
+                <li>Deploy y publicación online.</li>
+              </ul>
+            </article>
+
+            <article class="service-card service-card-featured">
+              <span class="service-number">02</span>
+              <h3>Landing con formulario</h3>
+              <p>
+                Sitio orientado a captar consultas reales mediante un formulario
+                personalizado y una estructura clara para convertir visitas en
+                contactos.
+              </p>
+
+              <div class="service-details">
+                <strong>Ideal para</strong>
+                <span>
+                  Estudios jurídicos, consultorios, inmobiliarias, servicios
+                  profesionales o negocios que necesitan recibir información
+                  ordenada.
+                </span>
+              </div>
+
+              <ul class="service-list">
+                <li>Todo lo de una landing profesional.</li>
+                <li>Formulario de contacto.</li>
+                <li>Envío de consultas por email.</li>
+                <li>Opcional: adjuntos, base de datos o planilla.</li>
+                <li>Configuración de dominio y deploy.</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span class="service-number">03</span>
+              <h3>Mejora de sitio existente</h3>
+              <p>
+                Revisión y mejora de una web existente para ordenar contenido,
+                mejorar diseño, responsive, claridad visual y facilidad de
+                contacto.
+              </p>
+
+              <div class="service-details">
+                <strong>Ideal para</strong>
+                <span>
+                  Negocios que ya tienen una web antigua, incompleta o poco
+                  clara, y quieren mejorar su presencia digital.
+                </span>
+              </div>
+
+              <ul class="service-list">
+                <li>Revisión del sitio actual.</li>
+                <li>Mejora visual y estructural.</li>
+                <li>Optimización responsive.</li>
+                <li>Ajustes básicos de SEO.</li>
+                <li>Publicación y revisión final.</li>
+              </ul>
+            </article>
+            <div class="services-cta-panel">
+              <div>
+                <span class="section-kicker">Consulta inicial</span>
+
+                <h3>¿No sabés qué tipo de web necesitás?</h3>
+
+                <p>
+                  Contame brevemente tu idea, tu negocio o el problema que
+                  querés resolver. Te puedo orientar sobre qué tipo de sitio
+                  tiene más sentido para empezar.
+                </p>
+              </div>
+
+              <a
+                class="btn btn-whatsapp"
+                href="https://wa.me/542983659649?text=Hola%20Lucas%2C%20vi%20tu%20portfolio%20y%20quiero%20consultarte%20por%20una%20web."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="container fade-up">
+          <div class="section-heading section-heading-center">
+            <span class="section-kicker">Proceso</span>
+            <h2 class="section-title">Cómo trabajo</h2>
+            <p class="section-copy">
+              Trabajo con un proceso simple y ordenado para que el proyecto
+              avance con claridad desde la idea inicial hasta la publicación.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-card">
+              <span>01</span>
+              <h3>Primera charla</h3>
+              <p>
+                Revisamos qué necesitás, qué objetivo tiene la web, qué
+                información querés mostrar y qué funcionalidades son necesarias.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <span>02</span>
+              <h3>Propuesta y alcance</h3>
+              <p>
+                Definimos qué se va a desarrollar, qué incluye el proyecto,
+                tiempos estimados y forma de trabajo.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <span>03</span>
+              <h3>Estructura y contenido</h3>
+              <p>
+                Ordenamos secciones, textos, imágenes, enlaces y llamados a la
+                acción antes de avanzar con el desarrollo.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <span>04</span>
+              <h3>Desarrollo</h3>
+              <p>
+                Construyo la web responsive cuidando diseño, claridad visual,
+                rendimiento y experiencia de usuario.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <span>05</span>
+              <h3>Revisión</h3>
+              <p>
+                Probamos la web en mobile y desktop, ajustamos detalles y
+                verificamos que formularios o enlaces funcionen correctamente.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <span>06</span>
+              <h3>Publicación</h3>
+              <p>
+                Subo el sitio a producción, configuro el dominio y dejo la web
+                lista para compartir.
+              </p>
+            </article>
+          </div>
+
+          <aside class="payment-note">
+            <strong>Forma de pago</strong>
+            <p>
+              La forma de pago se acuerda según el alcance del proyecto. En
+              general trabajo con una seña inicial para comenzar y el saldo
+              restante contra entrega o publicación del sitio.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container fade-up">
+          <div class="projects-top projects-top--simple">
+            <div>
+              <span class="section-kicker">Proyectos</span>
+              <h2 class="section-title">Trabajos y desarrollos destacados</h2>
+
+              <p class="section-copy">
+                Proyectos donde combiné interfaz, lógica, estructura frontend,
+                despliegue en producción y soluciones aplicadas a necesidades
+                reales.
+              </p>
+            </div>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid">
+            <article class="project-card project-card-featured">
+              <div
+                class="project-thumb"
+                data-full="../assets/projects/estudio-lachat.jpg"
+                data-title="Estudio Jurídico Lachat"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del sitio Estudio Jurídico Lachat"
+              >
+                <img
+                  src="../assets/projects/estudio-lachat.jpg"
+                  alt="Captura del sitio web Estudio Jurídico Lachat"
+                  class="project-image"
+                />
+                <span class="project-preview-hint">Ampliar</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag">Proyecto Real</span>
+
+                <h3>Estudio Jurídico Lachat</h3>
+
+                <p class="project-subtitle">
+                  Sitio profesional para estudio jurídico
+                </p>
+
+                <p>
+                  Sitio web profesional desarrollado para un estudio jurídico,
+                  orientado a presentar servicios legales y captar consultas
+                  reales. El proyecto comenzó como una landing en React y
+                  Tailwind CSS, y luego fue migrado a Next.js con TypeScript,
+                  Supabase y Resend para mejorar estructura, escalabilidad y
+                  flujo de contacto.
+                </p>
+
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind CSS</span>
+                  <span>Supabase</span>
+                  <span>Resend</span>
+                  <span>Vercel</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="project-link project-link--primary"
+                    href="https://www.estudiolachat.com.ar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver sitio
+                  </a>
+
+                  <a
+                    class="project-link"
+                    href="./projects/estudio-lachat.html"
+                  >
+                    Caso de estudio
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card-featured">
+              <div
+                class="project-thumb"
+                data-full="../assets/projects/opscore.jpg"
+                data-title="OpsCore"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del proyecto OpsCore"
+              >
+                <img
+                  src="../assets/projects/opscore.jpg"
+                  alt="Captura del sistema web OpsCore"
+                  class="project-image"
+                />
+                <span class="project-preview-hint">Ampliar</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag">MVP Colaborativo</span>
+
+                <h3>OpsCore</h3>
+
+                <p class="project-subtitle">
+                  Sistema web para gestión de incidentes operativos
+                </p>
+
+                <p>
+                  Aplicación web desarrollada en equipo para digitalizar el
+                  reporte, seguimiento y resolución de incidentes en entornos
+                  operativos. Participé principalmente en el frontend,
+                  integrando autenticación, roles, rutas protegidas, consumo de
+                  API REST, vistas por perfil, correcciones de QA y mejoras de
+                  rendimiento en listados.
+                </p>
+
+                <div class="project-stack">
+                  <span>Next.js</span>
+                  <span>React</span>
+                  <span>Tailwind CSS v4</span>
+                  <span>API REST</span>
+                  <span>Auth</span>
+                  <span>Vercel</span>
+                  <span>Render</span>
+                </div>
+
+                <div class="project-actions">
+                  <a class="project-link" href="./projects/opscore.html">
+                    Caso de estudio
+                  </a>
+
+                  <a
+                    class="project-link project-link--primary"
+                    href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div
+                class="project-thumb"
+                data-full="../assets/projects/rescue-store.jpg"
+                data-title="Rescue Store"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del proyecto Rescue Store"
+              >
+                <img
+                  src="../assets/projects/rescue-store.jpg"
+                  alt="Captura del proyecto Rescue Store"
+                  class="project-image"
+                />
+                <span class="project-preview-hint">Ampliar</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag">Proyecto Personal</span>
+
+                <h3>Rescue Store</h3>
+
+                <p class="project-subtitle">
+                  Ecommerce en React con autenticación y rutas protegidas
+                </p>
+
+                <p>
+                  Aplicación e-commerce desarrollada con React y Firebase, con
+                  autenticación, rutas protegidas y arquitectura basada en
+                  componentes reutilizables. Fue diseñada para ofrecer una
+                  experiencia de usuario moderna, responsive y funcional.
+                </p>
+
+                <div class="project-stack">
+                  <span>React</span>
+                  <span>Firebase</span>
+                  <span>React Router</span>
+                  <span>Netlify</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="project-link project-link--primary"
+                    href="https://rescue-store.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    class="project-link"
+                    href="https://github.com/Lucas-Epherra/rescue-store"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div
+                class="project-thumb"
+                data-full="../assets/projects/playa-segura.jpg"
+                data-title="PlayaSegura"
+                role="button"
+                tabindex="0"
+                aria-label="Ampliar captura del proyecto PlayaSegura"
+              >
+                <img
+                  src="../assets/projects/playa-segura.jpg"
+                  alt="Captura del proyecto PlayaSegura"
+                  class="project-image"
+                />
+                <span class="project-preview-hint">Ampliar</span>
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag">Proyecto Personal</span>
+
+                <h3>PlayaSegura</h3>
+
+                <p class="project-subtitle">
+                  Sistema CRUD para incidencias de guardavidas
+                </p>
+
+                <p>
+                  Sistema CRUD orientado al registro y seguimiento de
+                  incidencias del servicio de guardavidas. Fue pensado para
+                  resolver una necesidad operativa real, permitiendo cargar,
+                  consultar y organizar intervenciones de forma ágil, simple y
+                  funcional.
+                </p>
+
+                <div class="project-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Netlify</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="project-link project-link--primary"
+                    href="https://playa-segura.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    class="project-link"
+                    href="https://github.com/Lucas-Epherra/Crud-PlayaSegura-Epherra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cta" id="contact">
+        <div class="container contact-grid">
+          <article class="card-light fade-up">
+            <span class="contact-badge">Disponible</span>
+
+            <h2 class="section-title section-title-small">
+              ¿Querés una web clara y profesional?
+            </h2>
+
+            <p class="contact-copy-light">
+              Estoy disponible para proyectos freelance de desarrollo web y
+              también abierto a oportunidades como Frontend Developer. Si tenés
+              una idea, una web para mejorar o necesitás ordenar tu presencia
+              online, podemos hablarlo.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span>Email:</span>
+                <span>lucasepherra@gmail.com</span>
+              </div>
+
+              <div class="contact-item">
+                <span>Ubicación:</span>
+                <span>Tres Arroyos, Buenos Aires, Argentina</span>
+              </div>
+
+              <div class="contact-item">
+                <span>Inglés:</span>
+                <span>Profesional</span>
+              </div>
+
+              <div class="contact-item">
+                <span>Español:</span>
+                <span>Nativo</span>
+              </div>
+            </div>
+
+            <div class="contact-cta-group">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/542983659649?text=Hola%20Lucas%2C%20vi%20tu%20portfolio%20y%20quiero%20consultarte%20por%20una%20web."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consultar por WhatsApp
+              </a>
+
+              <a
+                class="btn btn-light-section"
+                href="mailto:lucasepherra@gmail.com"
+              >
+                Enviarme un email
+              </a>
+
+              <a
+                href="../assets/cv/lucas-epherra-cv.pdf"
+                class="btn btn-light-section"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                Descargar CV (Español)
+              </a>
+
+              <a
+                href="../assets/cv/lucas-epherra-cv-english.pdf"
+                class="btn btn-light-section"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                Download CV (English)
+              </a>
+            </div>
+          </article>
+
+          <article class="card-dark contact-links-card fade-up">
+            <span class="contact-badge contact-badge--dark">Enlaces</span>
+
+            <h2 class="section-title section-title-small">
+              También podés encontrarme acá
+            </h2>
+
+            <p class="section-copy section-copy-reset">
+              Accedé a mis proyectos, repositorios, perfil profesional y canales
+              de contacto directo.
+            </p>
+
+            <div class="contact-link-list" aria-label="Enlaces profesionales">
+              <a
+                class="contact-link-item contact-link-item--whatsapp"
+                href="https://wa.me/542983659649?text=Hola%20Lucas%2C%20vi%20tu%20portfolio%20y%20quiero%20consultarte%20por%20una%20web."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>WhatsApp</span>
+                <small
+                  >Consultas rápidas sobre sitios web, landings o mejoras para
+                  tu negocio.</small
+                >
+              </a>
+
+              <a
+                class="contact-link-item"
+                href="https://github.com/Lucas-Epherra"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>GitHub</span>
+                <small>Repositorios, código y proyectos frontend.</small>
+              </a>
+
+              <a
+                class="contact-link-item"
+                href="https://www.linkedin.com/in/lucas-epherra/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>LinkedIn</span>
+                <small
+                  >Perfil profesional, experiencia y actualizaciones.</small
+                >
+              </a>
+
+              <a
+                class="contact-link-item"
+                href="https://www.lucasepherra.com.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Portfolio</span>
+                <small>Proyectos destacados y servicios disponibles.</small>
+              </a>
+
+              <a class="contact-link-item" href="mailto:lucasepherra@gmail.com">
+                <span>Email</span>
+                <small
+                  >Consultas formales, propuestas laborales o envío de
+                  información detallada.</small
+                >
+              </a>
+            </div>
+
+            <div class="contact-note">
+              <strong>¿Tenés una idea para una web?</strong>
+              <span>
+                Escribime con una breve descripción del proyecto y revisamos
+                juntos qué solución tiene más sentido.
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+      <div class="image-modal-backdrop" id="imageModalBackdrop"></div>
+
+      <div
+        class="image-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="imageModalTitle"
+      >
+        <button
+          class="image-modal-close"
+          id="imageModalClose"
+          type="button"
+          aria-label="Cerrar imagen"
+        >
+          ×
+        </button>
+
+        <p class="image-modal-title" id="imageModalTitle"></p>
+
+        <img src="" alt="" class="image-modal-img" id="imageModalImg" />
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="currentYear"></span> Lucas Epherra - Portfolio</p>
+      </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
