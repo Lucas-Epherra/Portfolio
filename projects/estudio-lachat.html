@@ -34,6 +34,17 @@
     <meta name="twitter:description" content="Real frontend client project developed with Next.js, TypeScript, Tailwind CSS, Supabase, Resend and Vercel." />
     <meta name="twitter:image" content="https://www.lucasepherra.com.ar/assets/projects/estudio-lachat.jpg" />
 
+    <script>
+      (() => {
+        const storageKey = "portfolio-theme";
+        const storedTheme = localStorage.getItem(storageKey);
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : prefersDark ? "dark" : "light";
+
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -55,9 +66,25 @@
             <li><a href="../index.html#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="language-switch" aria-label="Language selector">
-          <a class="is-active" href="./estudio-lachat.html" hreflang="en" lang="en" aria-current="page">EN</a>
-          <a href="../es/projects/estudio-lachat.html" hreflang="es" lang="es">ES</a>
+        <div class="nav-controls">
+          <div class="language-switch" aria-label="Language selector">
+                    <a class="is-active" href="./estudio-lachat.html" hreflang="en" lang="en" aria-current="page">EN</a>
+                    <a href="../es/projects/estudio-lachat.html" hreflang="es" lang="es">ES</a>
+                  </div>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            data-dark-label="Dark"
+            data-light-label="Light"
+            data-dark-aria="Switch to dark mode"
+            data-light-aria="Switch to light mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+            <span data-theme-label>Dark</span>
+          </button>
         </div>
       </div>
     </header>

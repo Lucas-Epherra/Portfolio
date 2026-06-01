@@ -52,6 +52,12 @@ Spanish is available under `/es/` for local freelance and Spanish-speaking conta
 └── README.md
 ```
 
+
+## Theme support
+
+The portfolio includes a light/dark mode toggle with preference persistence through `localStorage`.
+If the user has no saved preference, the site respects the browser `prefers-color-scheme` setting.
+
 ## Featured projects
 
 ### Estudio Jurídico Lachat

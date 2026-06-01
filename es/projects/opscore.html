@@ -69,6 +69,17 @@
       content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg"
     />
 
+    <script>
+      (() => {
+        const storageKey = "portfolio-theme";
+        const storedTheme = localStorage.getItem(storageKey);
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : prefersDark ? "dark" : "light";
+
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
     <!-- Fonts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -111,9 +122,25 @@
           </ul>
         </nav>
 
-        <div class="language-switch" aria-label="Selector de idioma">
-          <a href="../../projects/opscore.html" hreflang="en" lang="en">EN</a>
-          <a class="is-active" href="./opscore.html" hreflang="es" lang="es" aria-current="page">ES</a>
+        <div class="nav-controls">
+          <div class="language-switch" aria-label="Selector de idioma">
+                    <a href="../../projects/opscore.html" hreflang="en" lang="en">EN</a>
+                    <a class="is-active" href="./opscore.html" hreflang="es" lang="es" aria-current="page">ES</a>
+                  </div>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Cambiar a modo oscuro"
+            data-dark-label="Oscuro"
+            data-light-label="Claro"
+            data-dark-aria="Cambiar a modo oscuro"
+            data-light-aria="Cambiar a modo claro"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+            <span data-theme-label>Oscuro</span>
+          </button>
         </div>
       </div>
     </header>

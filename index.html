@@ -30,6 +30,17 @@
 <meta content="Lucas Epherra | Frontend Developer" name="twitter:title"/>
 <meta content="Frontend portfolio with real-world projects, collaborative MVPs, client-facing websites, React, Next.js, TypeScript, Tailwind CSS and Supabase." name="twitter:description"/>
 <meta content="https://www.lucasepherra.com.ar/assets/preview/portfolio-cover.jpg" name="twitter:image"/>
+    <script>
+      (() => {
+        const storageKey = "portfolio-theme";
+        const storedTheme = localStorage.getItem(storageKey);
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : prefersDark ? "dark" : "light";
+
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
 <!-- Fonts and styles -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -54,10 +65,26 @@
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
-<div class="language-switch" aria-label="Language selector">
-<a class="is-active" href="./index.html" hreflang="en" lang="en" aria-current="page">EN</a>
-<a href="./es/index.html" hreflang="es" lang="es">ES</a>
-</div>
+<div class="nav-controls">
+          <div class="language-switch" aria-label="Language selector">
+          <a class="is-active" href="./index.html" hreflang="en" lang="en" aria-current="page">EN</a>
+          <a href="./es/index.html" hreflang="es" lang="es">ES</a>
+          </div>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            data-dark-label="Dark"
+            data-light-label="Light"
+            data-dark-aria="Switch to dark mode"
+            data-light-aria="Switch to light mode"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+            <span data-theme-label>Dark</span>
+          </button>
+        </div>
 </div>
 </header>
 <main>
