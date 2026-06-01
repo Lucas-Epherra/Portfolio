@@ -1,269 +1,285 @@
-# Lucas Epherra | Frontend Developer Portfolio
+# Lucas Epherra — Frontend Developer Portfolio
 
-Portfolio profesional de Lucas Epherra, Frontend Developer enfocado en construir interfaces claras, responsivas y funcionales con foco en experiencia de usuario, buenas prácticas frontend y entrega en producción.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 
-## 🌐 Enlaces principales
+Personal portfolio website built to present my frontend development profile, technical skills, real-world projects and professional growth path.
 
-- **Portfolio:** https://www.lucasepherra.com.ar/
-- **GitHub:** https://github.com/Lucas-Epherra
-- **LinkedIn:** https://www.linkedin.com/in/lucas-epherra/
-- **Email:** lucasepherra@gmail.com
+The portfolio focuses on clear project presentation, responsive design, clean visual hierarchy and practical examples of web interfaces built with technologies such as HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind CSS, Firebase and Supabase.
 
-## 🧠 Sobre el proyecto
+🌐 **Live website:** https://www.lucasepherra.com.ar/  
+🔗 **Repository:** https://github.com/Lucas-Epherra/Portfolio
 
-Este repositorio contiene mi portfolio personal. El objetivo es presentar mi perfil profesional, mis servicios de desarrollo web y una selección de proyectos propios, colaborativos y reales.
+---
 
-El sitio está construido de forma simple y mantenible con HTML, CSS y JavaScript, priorizando carga rápida, diseño responsive, accesibilidad básica, buena estructura semántica, metadatos SEO y enlaces claros a proyectos, casos de estudio y contacto.
+## Table of contents
 
-## 🛠️ Stack del portfolio
+- [Overview](#overview)
+- [Project status](#project-status)
+- [Tech stack](#tech-stack)
+- [Main sections](#main-sections)
+- [Featured projects](#featured-projects)
+- [Project structure](#project-structure)
+- [Design approach](#design-approach)
+- [Local installation](#local-installation)
+- [What I practiced](#what-i-practiced)
+- [Future improvements](#future-improvements)
+- [Author](#author)
 
-- **HTML5 semántico**
+---
+
+## Overview
+
+This portfolio was created as my personal space to showcase my work as a frontend developer.
+
+Its main purpose is to present:
+
+- My technical profile.
+- My strongest projects.
+- My frontend development skills.
+- My experience building practical web interfaces.
+- My progress toward professional opportunities in the IT industry.
+
+The website is focused on clarity, usability and direct access to my projects, repositories, live demos and contact channels.
+
+---
+
+## Project status
+
+Current status: **active personal portfolio**.
+
+The portfolio is currently used to present my frontend profile and selected projects. It is continuously updated as I complete new projects, improve existing ones and expand my technical stack.
+
+Current focus:
+
+- Keeping project information updated.
+- Improving project descriptions and case studies.
+- Highlighting real-world work and team-based projects.
+- Presenting a more professional and international developer profile.
+
+---
+
+## Tech stack
+
+This portfolio is built with:
+
+- **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Responsive Design**
-- **SEO básico**
-- **Open Graph / Social Preview**
-- **Git & GitHub**
 - **GitHub Pages**
-- **Dominio propio**
 
-## 🚀 Stack y herramientas que trabajo actualmente
-
-Además del stack usado para este portfolio, mis proyectos recientes incorporan tecnologías y herramientas como:
+It also showcases projects built with:
 
 - **React**
-- **Next.js / App Router**
+- **Next.js**
 - **TypeScript**
-- **Tailwind CSS v4**
-- **Supabase**
+- **Tailwind CSS**
 - **Firebase**
-- **Resend**
-- **APIs REST**
-- **Autenticación y rutas protegidas**
+- **Supabase**
+- **REST APIs**
 - **Vercel**
 - **Netlify**
 - **Render**
-- **Postman**
-- **Git / GitHub / Pull Requests**
-
-## 📂 Proyectos destacados
-
-### 1. Estudio Jurídico Lachat
-
-Sitio web profesional desarrollado para un estudio jurídico, orientado a presentar servicios legales, transmitir confianza y captar consultas reales mediante un flujo funcional de contacto.
-
-El proyecto comenzó como una landing en React y Tailwind CSS, y luego fue migrado a Next.js con TypeScript para mejorar la arquitectura, la mantenibilidad y la escalabilidad.
-
-**Tecnologías y herramientas:**
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Supabase
-- Resend
-- Vercel
-- Dominio propio
-
-**Puntos destacados:**
-
-- Proyecto real para cliente.
-- Diseño responsive y estética profesional.
-- Formulario de contacto funcional.
-- Carga de archivos.
-- Persistencia de consultas.
-- Notificaciones por email.
-- Deploy en producción con dominio propio.
-
-**Links:**
-
-- Sitio: https://www.estudiolachat.com.ar/
-- Repositorio: https://github.com/Lucas-Epherra/estudio-lachat-next
-- Caso de estudio: https://www.lucasepherra.com.ar/projects/estudio-lachat.html
 
 ---
 
-### 2. OpsCore
+## Main sections
 
-Sistema web colaborativo para gestión de incidentes operativos en un contexto industrial. El proyecto fue desarrollado como MVP en equipo, con foco en digitalizar el reporte, seguimiento, asignación y resolución de incidentes.
+The portfolio includes:
 
-Mi participación estuvo centrada principalmente en el frontend: integración con API REST, autenticación, rutas protegidas, vistas por rol, consumo de endpoints reales, corrección de bugs detectados por QA, mejora de rendimiento en listados y ajustes para producción.
-
-**Tecnologías y herramientas:**
-
-- Next.js
-- React
-- JavaScript
-- Tailwind CSS v4
-- API REST
-- Autenticación
-- Roles y permisos
-- Vercel
-- Render
-- Postman
-- Git / GitHub
-
-**Puntos destacados:**
-
-- MVP operativo desarrollado en equipo.
-- Flujo por roles: operador, supervisor, técnico y manager.
-- Integración frontend/backend con API REST.
-- Rutas protegidas y renderizado condicional por perfil.
-- Optimización de listados pesados.
-- Trabajo con ramas, PRs, QA y despliegue.
-- Caso de estudio propio dentro del portfolio.
-
-**Links:**
-
-- Repositorio: https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development
-- Caso de estudio: https://www.lucasepherra.com.ar/projects/opscore.html
-
-> La demo pública no se prioriza como link principal porque actualmente cae en login. El foco del portfolio está puesto en el caso de estudio y el repositorio.
+- Hero / introduction section.
+- About me section.
+- Technical skills section.
+- Featured projects section.
+- Professional experience and learning path.
+- Contact section.
+- Links to GitHub, LinkedIn and live projects.
 
 ---
 
-### 3. Rescue Store
+## Featured projects
 
-E-commerce desarrollado con React y Firebase, orientado a una tienda temática de productos vinculados al mundo del rescate y guardavidas.
+### OpsCore
 
-**Tecnologías y herramientas:**
+Industrial incident management MVP developed as part of a team simulation.
 
-- React
-- Firebase
-- React Router
-- Netlify
-- CSS
+The project focuses on digitalizing operational incident reports, managing role-based workflows, assigning technicians, tracking incidents and improving process traceability in industrial environments.
 
-**Puntos destacados:**
+**Stack:** Next.js, React, JavaScript, Tailwind CSS, REST API, Django REST, Render, Vercel.
 
-- Autenticación con Firebase.
-- Rutas protegidas.
-- Carrito de compras.
-- Arquitectura basada en componentes.
-- Deploy en Netlify.
-
-**Links:**
-
-- Demo: https://rescue-store.netlify.app/
-- Repositorio: https://github.com/Lucas-Epherra/rescue-store
+🔗 Repository: https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development
 
 ---
 
-### 4. PlayaSegura
+### Estudio Jurídico Lachat
 
-Aplicación para registrar intervenciones o incidentes vinculados al trabajo operativo de guardavidas. El proyecto conecta mi experiencia como socorrista con soluciones digitales para ordenar información y mejorar el seguimiento.
+Commercial landing page for a legal studio, built with a strong focus on visual identity, user experience, performance, SEO and contact conversion.
 
-**Tecnologías y herramientas:**
+Includes a real contact form, file upload support, Supabase integration and transactional email automation.
 
-- React
-- JavaScript
-- CSS
-- Netlify
+**Stack:** Next.js, TypeScript, Tailwind CSS v4, Supabase, Resend, Vercel.
 
-**Puntos destacados:**
-
-- Registro de intervenciones.
-- Interfaz responsive.
-- Proyecto alineado con experiencia operativa real.
-- Enfoque en organización y trazabilidad de datos.
-
-**Links:**
-
-- Demo: https://playa-segura.netlify.app/
-- Repositorio: https://github.com/Lucas-Epherra/Crud-PlayaSegura-Epherra
+🔗 Repository: https://github.com/Lucas-Epherra/estudio-lachat-next  
+🌐 Website: https://www.estudiolachat.com.ar/
 
 ---
 
-### 5. Beach Monitoring App
+### Rescue Store
 
-Aplicación web para monitoreo de condiciones de playa, desarrollada con JavaScript y consumo de API externa.
+Modern e-commerce project built with React and Firebase.
 
-**Tecnologías y herramientas:**
+Includes authentication, persistent cart, protected checkout and order management with Firestore.
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-- Open-Meteo API
-- LocalStorage
-- GitHub Pages
+**Stack:** React, Firebase, CSS, Netlify.
 
-**Puntos destacados:**
+🔗 Repository: https://github.com/Lucas-Epherra/rescue-store  
+🌐 Demo: https://rescue-store.netlify.app/
 
-- Consumo de datos externos.
-- Persistencia simple de ciudad seleccionada.
-- Interfaz responsive.
-- Proyecto vinculado a contexto real de playa.
+---
 
-**Links:**
+### PlayaSegura
 
-- Demo: https://lucas-epherra.github.io/Beach-Monitoring-App/
-- Repositorio: https://github.com/Lucas-Epherra/Beach-Monitoring-App
+Web application designed to register lifeguard interventions and daily incidents in a clear and organized way.
 
-## 📁 Estructura general
+The project explores how frontend applications can support beach safety operations by turning manual records into structured information.
+
+**Stack:** HTML, CSS, JavaScript, LocalStorage, Netlify.
+
+🔗 Repository: https://github.com/Lucas-Epherra/PlayaSegura  
+🌐 Demo: https://playa-segura.netlify.app/
+
+---
+
+### Beach Monitoring Dashboard
+
+Beach monitoring dashboard designed for lifeguards and beach safety teams.
+
+The project centralizes critical beach operation data in a simple interface focused on quick reading, visual clarity and fast decision-making.
+
+**Stack:** HTML, CSS, JavaScript, GitHub Pages.
+
+🔗 Repository: https://github.com/Lucas-Epherra/BeachApp  
+🌐 Demo: https://lucas-epherra.github.io/BeachApp/
+
+---
+
+## Project structure
 
 ```txt
-.
+Portfolio/
 ├── assets/
-│   ├── cv/
-│   ├── favicon/
-│   ├── preview/
-│   ├── projects/
-│   └── profile.jpg
 ├── css/
-│   └── style.css
 ├── js/
-│   └── app.js
 ├── projects/
-│   ├── estudio-lachat.html
-│   └── opscore.html
 ├── CNAME
 ├── index.html
 └── README.md
 ```
 
-## ▶️ Cómo ejecutar localmente
+### Folder responsibility
 
-Este portfolio no requiere instalación de dependencias.
-
-### Opción recomendada
-
-Abrir el proyecto con Visual Studio Code y ejecutar con la extensión **Live Server**.
-
-### Opción simple
-
-Abrir directamente el archivo:
-
-```txt
-index.html
-```
-
-## ✅ Buenas prácticas aplicadas
-
-- Estructura semántica con HTML5.
-- Diseño responsive para mobile y desktop.
-- Componentización visual mediante clases reutilizables.
-- Navegación clara.
-- Metadatos SEO.
-- Open Graph para previsualización en redes.
-- Favicon configurado.
-- Imágenes organizadas por sección.
-- Casos de estudio separados por proyecto.
-- Enlaces externos con `target="_blank"` y `rel="noopener noreferrer"`.
-
-## 🎯 Objetivo profesional
-
-Busco seguir creciendo como Frontend Developer, participar en proyectos reales y aportar valor desde la construcción de interfaces claras, mantenibles y orientadas a resolver necesidades concretas.
-
-Mi perfil combina desarrollo frontend, criterio visual, experiencia operativa y capacidad para trabajar en equipo, integrar APIs, interpretar requerimientos, corregir bugs y llevar funcionalidades a producción.
-
-## 📫 Contacto
-
-- **Portfolio:** https://www.lucasepherra.com.ar/
-- **GitHub:** https://github.com/Lucas-Epherra
-- **LinkedIn:** https://www.linkedin.com/in/lucas-epherra/
-- **Email:** lucasepherra@gmail.com
+- `assets/`: images, icons and static visual resources.
+- `css/`: stylesheets and responsive layout.
+- `js/`: JavaScript behavior and interactions.
+- `projects/`: project-related assets or pages.
+- `CNAME`: custom domain configuration for GitHub Pages.
+- `index.html`: main entry point of the portfolio.
+- `README.md`: project documentation.
 
 ---
 
-Si te interesa mi perfil o querés consultar por un proyecto web, podés escribirme desde cualquiera de los canales anteriores.
+## Design approach
+
+The portfolio was designed with a clear and practical goal: help recruiters, collaborators and potential clients understand my profile quickly.
+
+Main design principles:
+
+- **Clarity first:** information should be easy to scan.
+- **Project-focused:** real work is more important than decorative sections.
+- **Responsive layout:** the site must work well across mobile, tablet and desktop.
+- **Professional tone:** visual design should support credibility.
+- **Direct navigation:** visitors should quickly access projects, repositories and contact links.
+- **Consistent presentation:** each project should communicate its purpose, stack and value clearly.
+
+---
+
+## Local installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Lucas-Epherra/Portfolio.git
+```
+
+Move into the project directory:
+
+```bash
+cd Portfolio
+```
+
+Open the project:
+
+```bash
+start index.html
+```
+
+Or open `index.html` manually in your browser.
+
+You can also run it using the **Live Server** extension in Visual Studio Code.
+
+---
+
+## What I practiced
+
+This project helped me practice and improve:
+
+- Building a complete personal website.
+- Structuring a static frontend project.
+- Organizing content around a professional profile.
+- Writing project descriptions for recruiters and technical reviewers.
+- Improving responsive design.
+- Creating a clear visual hierarchy.
+- Managing a portfolio deployed with GitHub Pages.
+- Presenting real projects with live demos and repositories.
+- Keeping personal branding consistent across GitHub, LinkedIn and portfolio.
+
+---
+
+## Future improvements
+
+Planned improvements include:
+
+- Add full English version or language switcher.
+- Add detailed case studies for key projects.
+- Improve project filtering by technology.
+- Add better accessibility validation.
+- Improve performance and image optimization.
+- Add updated screenshots for each project.
+- Add structured metadata for better SEO.
+- Migrate to a modern stack such as Next.js and TypeScript.
+- Create a more scalable project data structure.
+- Improve content strategy for freelance and remote opportunities.
+
+---
+
+## Author
+
+Developed by **Lucas Epherra**.
+
+Frontend Developer focused on building modern, responsive and practical web interfaces with real-world purpose.
+
+I work mainly with React, Next.js, TypeScript, JavaScript and Tailwind CSS, and I am especially interested in projects related to operational systems, process digitalization, monitoring tools and useful web applications.
+
+- Portfolio: https://www.lucasepherra.com.ar/
+- GitHub: https://github.com/Lucas-Epherra
+- LinkedIn: https://www.linkedin.com/in/lucas-epherra
+
+---
+
+## Note
+
+This portfolio is part of my professional development path as a frontend developer.
+
+It is continuously updated as I improve my technical skills, complete new projects and move closer to my first formal professional experience in the IT industry.
