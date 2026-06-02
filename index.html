@@ -46,45 +46,100 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="./css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="./css/header.css" />
 </head>
 <body>
-<header class="nav">
-<div class="container nav-inner">
-<a aria-label="Go to homepage" class="brand" href="#home">
-<strong>LUCAS EPHERRA</strong>
-<span>Frontend Developer</span>
-</a>
-<button aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation menu" class="menu-btn" id="menuBtn" type="button" data-menu-label="Menu" data-close-label="Close">Menu</button>
-<nav aria-label="Main navigation">
-<ul class="nav-links" id="navLinks">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#process">Process</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div class="nav-controls">
-          <div class="language-switch" aria-label="Language selector">
-          <a class="is-active" href="./index.html" hreflang="en" lang="en" aria-current="page">EN</a>
-          <a href="./es/index.html" hreflang="es" lang="es">ES</a>
+<header class="site-header" data-site-header data-menu-state="closed">
+  <div class="site-header__inner">
+    <a href="#home" class="site-header__brand" aria-label="Go to homepage">
+      <span class="site-header__brand-main">LUCAS EPHERRA</span>
+      <span class="site-header__brand-sub">Frontend Developer</span>
+    </a>
+
+    <div class="site-header__desktop" aria-label="Primary">
+      <div class="site-header__desktop-nav">
+        <ul class="site-header__links" aria-label="Main navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="site-header__controls">
+          <div class="site-header__lang" aria-label="Language selector">
+            <a class="is-active" href="./index.html" hreflang="en" lang="en" aria-current="page">EN</a>
+            <a href="./es/index.html" hreflang="es" lang="es">ES</a>
           </div>
 
           <button
-            class="theme-toggle"
-            id="themeToggle"
+            class="site-header__theme"
             type="button"
+            data-theme-toggle
             aria-label="Switch to dark mode"
             data-dark-label="Dark"
             data-light-label="Light"
             data-dark-aria="Switch to dark mode"
             data-light-aria="Switch to light mode"
           >
-            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+            <span class="site-header__theme-icon" data-theme-icon aria-hidden="true">☾</span>
             <span data-theme-label>Dark</span>
           </button>
         </div>
-</nav></div>
+      </div>
+    </div>
+
+    <button
+      class="site-header__toggle"
+      type="button"
+      data-site-menu-button
+      aria-expanded="false"
+      aria-controls="site-mobile-menu"
+      aria-label="Open navigation menu"
+    >
+      <span class="site-header__toggle-label">Menu</span>
+    </button>
+
+    <div
+      class="site-header__mobile-panel"
+      id="site-mobile-menu"
+      data-site-menu-panel
+      aria-label="Mobile navigation"
+    >
+      <div class="site-header__mobile-inner">
+        <ul class="site-header__mobile-links">
+          <li><a href="#home" data-site-menu-link>Home</a></li>
+          <li><a href="#about" data-site-menu-link>About</a></li>
+          <li><a href="#services" data-site-menu-link>Services</a></li>
+          <li><a href="#process" data-site-menu-link>Process</a></li>
+          <li><a href="#projects" data-site-menu-link>Projects</a></li>
+          <li><a href="#contact" data-site-menu-link>Contact</a></li>
+        </ul>
+
+        <div class="site-header__mobile-footer">
+          <div class="site-header__lang" aria-label="Language selector">
+            <a class="is-active" href="./index.html" hreflang="en" lang="en" aria-current="page">EN</a>
+            <a href="./es/index.html" hreflang="es" lang="es">ES</a>
+          </div>
+
+          <button
+            class="site-header__theme"
+            type="button"
+            data-theme-toggle
+            aria-label="Switch to dark mode"
+            data-dark-label="Dark"
+            data-light-label="Light"
+            data-dark-aria="Switch to dark mode"
+            data-light-aria="Switch to light mode"
+          >
+            <span class="site-header__theme-icon" data-theme-icon aria-hidden="true">☾</span>
+            <span data-theme-label>Dark</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 <main>
 <section class="hero container" id="home">

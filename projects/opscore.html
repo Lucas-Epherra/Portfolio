@@ -17,19 +17,47 @@
     <meta name="author" content="Lucas Epherra" />
     <meta name="theme-color" content="#F8F5F0" />
 
-    <link rel="canonical" href="https://www.lucasepherra.com.ar/projects/opscore.html" />
-    <link rel="alternate" hreflang="en" href="https://www.lucasepherra.com.ar/projects/opscore.html" />
-    <link rel="alternate" hreflang="es" href="https://www.lucasepherra.com.ar/es/projects/opscore.html" />
+    <link
+      rel="canonical"
+      href="https://www.lucasepherra.com.ar/projects/opscore.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.lucasepherra.com.ar/projects/opscore.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://www.lucasepherra.com.ar/es/projects/opscore.html"
+    />
 
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
 
     <meta property="og:type" content="article" />
     <meta property="og:title" content="OpsCore | Case Study" />
-    <meta property="og:description" content="Collaborative MVP for operational incident management with frontend integration, REST API consumption, authentication, roles, protected routes and performance improvements." />
-    <meta property="og:url" content="https://www.lucasepherra.com.ar/projects/opscore.html" />
-    <meta property="og:image" content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg" />
+    <meta
+      property="og:description"
+      content="Collaborative MVP for operational incident management with frontend integration, REST API consumption, authentication, roles, protected routes and performance improvements."
+    />
+    <meta
+      property="og:url"
+      content="https://www.lucasepherra.com.ar/projects/opscore.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Lucas Epherra Portfolio" />
@@ -37,15 +65,28 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="OpsCore | Case Study" />
-    <meta name="twitter:description" content="Collaborative frontend project built with Next.js, React, Tailwind CSS, REST API integration, authentication, roles, Vercel and Render." />
-    <meta name="twitter:image" content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg" />
+    <meta
+      name="twitter:description"
+      content="Collaborative frontend project built with Next.js, React, Tailwind CSS, REST API integration, authentication, roles, Vercel and Render."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lucasepherra.com.ar/assets/projects/opscore.jpg"
+    />
 
     <script>
       (() => {
         const storageKey = "portfolio-theme";
         const storedTheme = localStorage.getItem(storageKey);
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : prefersDark ? "dark" : "light";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const theme =
+          storedTheme === "dark" || storedTheme === "light"
+            ? storedTheme
+            : prefersDark
+              ? "dark"
+              : "light";
 
         document.documentElement.dataset.theme = theme;
       })();
@@ -53,68 +94,193 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
   </head>
 
   <body>
-    <header class="nav">
-      <div class="container nav-inner">
-        <a href="../index.html#home" class="brand" aria-label="Go to homepage">
-          <strong>LUCAS EPHERRA</strong>
-          <span>Frontend Developer</span>
+    <header class="site-header" data-site-header data-menu-state="closed">
+      <div class="site-header__inner">
+        <a
+          href="../index.html#home"
+          class="site-header__brand"
+          aria-label="Go to homepage"
+        >
+          <span class="site-header__brand-main">LUCAS EPHERRA</span>
+          <span class="site-header__brand-sub">Frontend Developer</span>
         </a>
 
-        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false" data-menu-label="Menu" data-close-label="Close">Menu</button>
+        <div class="site-header__desktop" aria-label="Primary">
+          <div class="site-header__desktop-nav">
+            <ul class="site-header__links" aria-label="Main navigation">
+              <li><a href="../index.html#home">Home</a></li>
+              <li><a href="../index.html#about">About</a></li>
+              <li><a href="../index.html#services">Services</a></li>
+              <li><a href="../index.html#process">Process</a></li>
+              <li><a href="../index.html#projects">Projects</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
 
-        <nav aria-label="Main navigation">
-          <ul class="nav-links" id="navLinks">
-            <li><a href="../index.html#home">Home</a></li>
-            <li><a href="../index.html#about">About</a></li>
-            <li><a href="../index.html#services">Services</a></li>
-            <li><a href="../index.html#process">Process</a></li>
-            <li><a href="../index.html#projects">Projects</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
-          </ul>
-        <div class="nav-controls">
-          <div class="language-switch" aria-label="Language selector">
-                    <a class="is-active" href="./opscore.html" hreflang="en" lang="en" aria-current="page">EN</a>
-                    <a href="../es/projects/opscore.html" hreflang="es" lang="es">ES</a>
-                  </div>
+            <div class="site-header__controls">
+              <div class="site-header__lang" aria-label="Language selector">
+                <a
+                  class="is-active"
+                  href="./opscore.html"
+                  hreflang="en"
+                  lang="en"
+                  aria-current="page"
+                  >EN</a
+                >
+                <a href="../es/projects/opscore.html" hreflang="es" lang="es"
+                  >ES</a
+                >
+              </div>
 
-          <button
-            class="theme-toggle"
-            id="themeToggle"
-            type="button"
-            aria-label="Switch to dark mode"
-            data-dark-label="Dark"
-            data-light-label="Light"
-            data-dark-aria="Switch to dark mode"
-            data-light-aria="Switch to light mode"
-          >
-            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
-            <span data-theme-label>Dark</span>
-          </button>
+              <button
+                class="site-header__theme"
+                type="button"
+                data-theme-toggle
+                aria-label="Switch to dark mode"
+                data-dark-label="Dark"
+                data-light-label="Light"
+                data-dark-aria="Switch to dark mode"
+                data-light-aria="Switch to light mode"
+              >
+                <span
+                  class="site-header__theme-icon"
+                  data-theme-icon
+                  aria-hidden="true"
+                  >☾</span
+                >
+                <span data-theme-label>Dark</span>
+              </button>
+            </div>
+          </div>
         </div>
-      </nav></div>
-</header>
+
+        <button
+          class="site-header__toggle"
+          type="button"
+          data-site-menu-button
+          aria-expanded="false"
+          aria-controls="site-mobile-menu"
+          aria-label="Open navigation menu"
+        >
+          <span class="site-header__toggle-label">Menu</span>
+        </button>
+
+        <div
+          class="site-header__mobile-panel"
+          id="site-mobile-menu"
+          data-site-menu-panel
+          aria-label="Mobile navigation"
+        >
+          <div class="site-header__mobile-inner">
+            <ul class="site-header__mobile-links">
+              <li><a href="../index.html#home" data-site-menu-link>Home</a></li>
+              <li>
+                <a href="../index.html#about" data-site-menu-link>About</a>
+              </li>
+              <li>
+                <a href="../index.html#services" data-site-menu-link
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="../index.html#process" data-site-menu-link>Process</a>
+              </li>
+              <li>
+                <a href="../index.html#projects" data-site-menu-link
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="../index.html#contact" data-site-menu-link>Contact</a>
+              </li>
+            </ul>
+
+            <div class="site-header__mobile-footer">
+              <div class="site-header__lang" aria-label="Language selector">
+                <a
+                  class="is-active"
+                  href="./opscore.html"
+                  hreflang="en"
+                  lang="en"
+                  aria-current="page"
+                  >EN</a
+                >
+                <a href="../es/projects/opscore.html" hreflang="es" lang="es"
+                  >ES</a
+                >
+              </div>
+
+              <button
+                class="site-header__theme"
+                type="button"
+                data-theme-toggle
+                aria-label="Switch to dark mode"
+                data-dark-label="Dark"
+                data-light-label="Light"
+                data-dark-aria="Switch to dark mode"
+                data-light-aria="Switch to light mode"
+              >
+                <span
+                  class="site-header__theme-icon"
+                  data-theme-icon
+                  aria-hidden="true"
+                  >☾</span
+                >
+                <span data-theme-label>Dark</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main class="case-study-main">
       <section class="case-hero" aria-labelledby="case-title">
         <div class="container case-hero-grid">
           <div class="case-hero-content">
-            <a class="case-back-link" href="../index.html#projects">← Back to projects</a>
+            <a class="case-back-link" href="../index.html#projects"
+              >← Back to projects</a
+            >
             <span class="section-kicker">Case study</span>
             <h1 id="case-title">OpsCore</h1>
-            <p class="case-hero-lead">Collaborative MVP built to digitize the reporting, tracking and resolution of incidents in operational environments.</p>
-            <p>The project was developed as part of a professional team simulation, including frontend/backend integration, QA feedback, Git branches, pull requests, production deployment and improvements based on real operational flow issues.</p>
+            <p class="case-hero-lead">
+              Collaborative MVP built to digitize the reporting, tracking and
+              resolution of incidents in operational environments.
+            </p>
+            <p>
+              The project was developed as part of a professional team
+              simulation, including frontend/backend integration, QA feedback,
+              Git branches, pull requests, production deployment and
+              improvements based on real operational flow issues.
+            </p>
             <div class="case-actions" aria-label="Main links">
-              <a class="project-link project-link--primary" href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development" target="_blank" rel="noopener noreferrer">View repository</a>
+              <a
+                class="project-link project-link--primary"
+                href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View repository</a
+              >
               <a class="project-link" href="../index.html#contact">Contact</a>
             </div>
           </div>
           <figure class="case-hero-media">
-            <img src="../assets/projects/opscore.jpg" alt="Screenshot of the OpsCore web system" width="1200" height="760" loading="eager" decoding="async" />
+            <img
+              src="../assets/projects/opscore.jpg"
+              alt="Screenshot of the OpsCore web system"
+              width="1200"
+              height="760"
+              loading="eager"
+              decoding="async"
+            />
           </figure>
         </div>
       </section>
@@ -122,131 +288,340 @@
       <section class="case-section" aria-labelledby="summary-title">
         <div class="container">
           <div class="case-summary-grid">
-            <article class="case-summary-card"><span>Project type</span><strong>Collaborative web MVP</strong></article>
-            <article class="case-summary-card"><span>Role</span><strong>Frontend Developer</strong></article>
-            <article class="case-summary-card"><span>Main stack</span><strong>Next.js · React · Tailwind CSS</strong></article>
-            <article class="case-summary-card"><span>Status</span><strong>Operational MVP</strong></article>
+            <article class="case-summary-card">
+              <span>Project type</span><strong>Collaborative web MVP</strong>
+            </article>
+            <article class="case-summary-card">
+              <span>Role</span><strong>Frontend Developer</strong>
+            </article>
+            <article class="case-summary-card">
+              <span>Main stack</span
+              ><strong>Next.js · React · Tailwind CSS</strong>
+            </article>
+            <article class="case-summary-card">
+              <span>Status</span><strong>Operational MVP</strong>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="context-title">
         <div class="container case-two-columns">
-          <div><span class="section-kicker">Context</span><h2 id="context-title">The problem</h2></div>
+          <div>
+            <span class="section-kicker">Context</span>
+            <h2 id="context-title">The problem</h2>
+          </div>
           <div class="case-copy">
-            <p>In an operational environment, incidents are not enough to simply report. They need traceability, clear assignment, status tracking and a simple way to understand what is pending, what has been solved and who needs to act.</p>
-            <p>The main problem was organizing a workflow that can usually be scattered across messages, spreadsheets or manual records, especially when different profiles are involved: operator, supervisor, technician and manager.</p>
+            <p>
+              In an operational environment, incidents are not enough to simply
+              report. They need traceability, clear assignment, status tracking
+              and a simple way to understand what is pending, what has been
+              solved and who needs to act.
+            </p>
+            <p>
+              The main problem was organizing a workflow that can usually be
+              scattered across messages, spreadsheets or manual records,
+              especially when different profiles are involved: operator,
+              supervisor, technician and manager.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="case-section case-section-muted" aria-labelledby="goals-title">
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="goals-title"
+      >
         <div class="container">
           <div class="case-section-heading">
             <span class="section-kicker">Goals</span>
             <h2 id="goals-title">What the MVP needed to solve</h2>
-            <p>The priority was to build a functional tool that supported the full incident flow, from creation to resolution.</p>
+            <p>
+              The priority was to build a functional tool that supported the
+              full incident flow, from creation to resolution.
+            </p>
           </div>
           <div class="case-card-grid">
-            <article class="case-info-card"><span>01</span><h3>Centralized reporting</h3><p>Allow an operator to register an incident with clear information to start the tracking flow.</p></article>
-            <article class="case-info-card"><span>02</span><h3>Assignment and tracking</h3><p>Allow supervisors to assign technicians and ensure each role sees relevant information according to permissions.</p></article>
-            <article class="case-info-card"><span>03</span><h3>Operational visibility</h3><p>Show lists, details, statuses and metrics to understand the progress of incidents inside the system.</p></article>
+            <article class="case-info-card">
+              <span>01</span>
+              <h3>Centralized reporting</h3>
+              <p>
+                Allow an operator to register an incident with clear information
+                to start the tracking flow.
+              </p>
+            </article>
+            <article class="case-info-card">
+              <span>02</span>
+              <h3>Assignment and tracking</h3>
+              <p>
+                Allow supervisors to assign technicians and ensure each role
+                sees relevant information according to permissions.
+              </p>
+            </article>
+            <article class="case-info-card">
+              <span>03</span>
+              <h3>Operational visibility</h3>
+              <p>
+                Show lists, details, statuses and metrics to understand the
+                progress of incidents inside the system.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="solution-title">
         <div class="container case-two-columns">
-          <div><span class="section-kicker">Solution</span><h2 id="solution-title">What we built</h2></div>
+          <div>
+            <span class="section-kicker">Solution</span>
+            <h2 id="solution-title">What we built</h2>
+          </div>
           <div class="case-copy">
-            <p>We built a web application with a Next.js frontend, a Django REST API backend and role-based views. The system allows users to create incidents, browse lists, review details, assign technicians, resolve reports and access operational data.</p>
-            <p>My work focused on the frontend layer: view structure, integration with real endpoints, user session handling, role-based permissions, protected routes, data visualization, QA bug fixes and performance improvements on heavy list views.</p>
+            <p>
+              We built a web application with a Next.js frontend, a Django REST
+              API backend and role-based views. The system allows users to
+              create incidents, browse lists, review details, assign
+              technicians, resolve reports and access operational data.
+            </p>
+            <p>
+              My work focused on the frontend layer: view structure, integration
+              with real endpoints, user session handling, role-based
+              permissions, protected routes, data visualization, QA bug fixes
+              and performance improvements on heavy list views.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="case-section case-section-muted" aria-labelledby="features-title">
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="features-title"
+      >
         <div class="container">
-          <div class="case-section-heading"><span class="section-kicker">Features</span><h2 id="features-title">Main features</h2></div>
+          <div class="case-section-heading">
+            <span class="section-kicker">Features</span>
+            <h2 id="features-title">Main features</h2>
+          </div>
           <div class="case-feature-list">
-            <article><h3>Authentication</h3><p>Backend-connected login, session persistence and authenticated user reading to render the correct experience.</p></article>
-            <article><h3>Role-based views</h3><p>Interfaces adapted for operator, supervisor, technician and manager, avoiding actions that did not match each profile.</p></article>
-            <article><h3>Protected routes</h3><p>Access control for internal sections to prevent inconsistent navigation when there is no valid session.</p></article>
-            <article><h3>Incident management</h3><p>Creation, listing, detail view, technician assignment, resolution and reading of information related to each incident.</p></article>
-            <article><h3>Dashboard and metrics</h3><p>Operational data visualization to provide context about the general status of reports.</p></article>
-            <article><h3>QA fixes</h3><p>Adjustments on functional bugs, permissions, navigation, time formatting and consistency between views.</p></article>
+            <article>
+              <h3>Authentication</h3>
+              <p>
+                Backend-connected login, session persistence and authenticated
+                user reading to render the correct experience.
+              </p>
+            </article>
+            <article>
+              <h3>Role-based views</h3>
+              <p>
+                Interfaces adapted for operator, supervisor, technician and
+                manager, avoiding actions that did not match each profile.
+              </p>
+            </article>
+            <article>
+              <h3>Protected routes</h3>
+              <p>
+                Access control for internal sections to prevent inconsistent
+                navigation when there is no valid session.
+              </p>
+            </article>
+            <article>
+              <h3>Incident management</h3>
+              <p>
+                Creation, listing, detail view, technician assignment,
+                resolution and reading of information related to each incident.
+              </p>
+            </article>
+            <article>
+              <h3>Dashboard and metrics</h3>
+              <p>
+                Operational data visualization to provide context about the
+                general status of reports.
+              </p>
+            </article>
+            <article>
+              <h3>QA fixes</h3>
+              <p>
+                Adjustments on functional bugs, permissions, navigation, time
+                formatting and consistency between views.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="stack-title">
         <div class="container case-two-columns">
-          <div><span class="section-kicker">Stack</span><h2 id="stack-title">Technologies used</h2></div>
           <div>
-            <div class="case-stack-group"><h3>Frontend</h3><div class="project-stack"><span>Next.js</span><span>React</span><span>JavaScript</span><span>Tailwind CSS v4</span></div></div>
-            <div class="case-stack-group"><h3>Integration</h3><div class="project-stack"><span>REST API</span><span>Auth</span><span>Roles</span><span>Protected routes</span><span>Postman</span></div></div>
-            <div class="case-stack-group"><h3>Deployment and teamwork</h3><div class="project-stack"><span>Vercel</span><span>Render</span><span>Git</span><span>GitHub</span><span>Pull Requests</span><span>QA</span></div></div>
+            <span class="section-kicker">Stack</span>
+            <h2 id="stack-title">Technologies used</h2>
+          </div>
+          <div>
+            <div class="case-stack-group">
+              <h3>Frontend</h3>
+              <div class="project-stack">
+                <span>Next.js</span><span>React</span><span>JavaScript</span
+                ><span>Tailwind CSS v4</span>
+              </div>
+            </div>
+            <div class="case-stack-group">
+              <h3>Integration</h3>
+              <div class="project-stack">
+                <span>REST API</span><span>Auth</span><span>Roles</span
+                ><span>Protected routes</span><span>Postman</span>
+              </div>
+            </div>
+            <div class="case-stack-group">
+              <h3>Deployment and teamwork</h3>
+              <div class="project-stack">
+                <span>Vercel</span><span>Render</span><span>Git</span
+                ><span>GitHub</span><span>Pull Requests</span><span>QA</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="case-section case-section-muted" aria-labelledby="role-title">
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="role-title"
+      >
         <div class="container case-two-columns">
-          <div><span class="section-kicker">My role</span><h2 id="role-title">Main responsibilities</h2></div>
+          <div>
+            <span class="section-kicker">My role</span>
+            <h2 id="role-title">Main responsibilities</h2>
+          </div>
           <div class="case-copy">
-            <p>I participated as a Frontend Developer, taking tasks related to integration, view structure and user experience adjustments. The focus was to move the MVP beyond a mockup and make it work with real data, roles and endpoints.</p>
-            <p>I also worked on navigation improvements, permissions, QA bug fixes, inconsistent flow cleanup and optimization of views that were loading data too heavily.</p>
+            <p>
+              I participated as a Frontend Developer, taking tasks related to
+              integration, view structure and user experience adjustments. The
+              focus was to move the MVP beyond a mockup and make it work with
+              real data, roles and endpoints.
+            </p>
+            <p>
+              I also worked on navigation improvements, permissions, QA bug
+              fixes, inconsistent flow cleanup and optimization of views that
+              were loading data too heavily.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="decisions-title">
         <div class="container">
-          <div class="case-section-heading"><span class="section-kicker">Technical decisions</span><h2 id="decisions-title">Criteria applied during development</h2></div>
+          <div class="case-section-heading">
+            <span class="section-kicker">Technical decisions</span>
+            <h2 id="decisions-title">Criteria applied during development</h2>
+          </div>
           <div class="case-decision-list">
-            <article><h3>Frontend connected to a real backend</h3><p>We prioritized consuming real endpoints instead of mock data to validate the complete product flow.</p></article>
-            <article><h3>Role-segmented experience</h3><p>I adjusted navigation, buttons and views so each profile could access actions aligned with its responsibilities.</p></article>
-            <article><h3>QA-driven fixes</h3><p>The project was refined from concrete reports, prioritizing bugs that blocked the flow or created confusion.</p></article>
-            <article><h3>Heavy list optimization</h3><p>We worked on slow views to reduce unnecessary requests and improve the experience when navigating data.</p></article>
+            <article>
+              <h3>Frontend connected to a real backend</h3>
+              <p>
+                We prioritized consuming real endpoints instead of mock data to
+                validate the complete product flow.
+              </p>
+            </article>
+            <article>
+              <h3>Role-segmented experience</h3>
+              <p>
+                I adjusted navigation, buttons and views so each profile could
+                access actions aligned with its responsibilities.
+              </p>
+            </article>
+            <article>
+              <h3>QA-driven fixes</h3>
+              <p>
+                The project was refined from concrete reports, prioritizing bugs
+                that blocked the flow or created confusion.
+              </p>
+            </article>
+            <article>
+              <h3>Heavy list optimization</h3>
+              <p>
+                We worked on slow views to reduce unnecessary requests and
+                improve the experience when navigating data.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="case-section case-section-muted" aria-labelledby="result-title">
+      <section
+        class="case-section case-section-muted"
+        aria-labelledby="result-title"
+      >
         <div class="container case-result-card">
           <span class="section-kicker">Result</span>
           <h2 id="result-title">Operational MVP with the main flow working</h2>
-          <p>The result was an operational MVP with authentication, role-based views, incident reporting, assignment, tracking, resolution and data visualization. Beyond the technical side, the project helped me work in a more realistic environment: team workflow, QA, branches, PRs, frontend/backend integration and production deployment.</p>
+          <p>
+            The result was an operational MVP with authentication, role-based
+            views, incident reporting, assignment, tracking, resolution and data
+            visualization. Beyond the technical side, the project helped me work
+            in a more realistic environment: team workflow, QA, branches, PRs,
+            frontend/backend integration and production deployment.
+          </p>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="learning-title">
         <div class="container case-two-columns">
-          <div><span class="section-kicker">Learnings</span><h2 id="learning-title">What I learned from this project</h2></div>
+          <div>
+            <span class="section-kicker">Learnings</span>
+            <h2 id="learning-title">What I learned from this project</h2>
+          </div>
           <div class="case-copy">
-            <p>OpsCore helped me strengthen skills that do not always appear in individual projects: coordinating changes with backend, adapting the frontend to real API responses, working with QA criteria and making decisions for users with different roles.</p>
-            <p>It also left a clear technical lesson: when a view feels slow, improving styles or loading states is not enough. You need to review the data flow, avoid repeated work and address the real bottleneck.</p>
+            <p>
+              OpsCore helped me strengthen skills that do not always appear in
+              individual projects: coordinating changes with backend, adapting
+              the frontend to real API responses, working with QA criteria and
+              making decisions for users with different roles.
+            </p>
+            <p>
+              It also left a clear technical lesson: when a view feels slow,
+              improving styles or loading states is not enough. You need to
+              review the data flow, avoid repeated work and address the real
+              bottleneck.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="case-section case-final-cta" aria-labelledby="links-title">
+      <section
+        class="case-section case-final-cta"
+        aria-labelledby="links-title"
+      >
         <div class="container case-final-card">
           <div>
             <span class="section-kicker">Links</span>
             <h2 id="links-title">View project code</h2>
-            <p>I show the repository as a technical reference. I do not include the public demo as the main link because the app currently opens directly into login, and this case study communicates the real MVP scope more clearly.</p>
+            <p>
+              I show the repository as a technical reference. I do not include
+              the public demo as the main link because the app currently opens
+              directly into login, and this case study communicates the real MVP
+              scope more clearly.
+            </p>
           </div>
           <div class="case-actions">
-            <a class="project-link project-link--primary" href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development" target="_blank" rel="noopener noreferrer">Repository</a>
-            <a class="project-link" href="../index.html#projects">Back to projects</a>
+            <a
+              class="project-link project-link--primary"
+              href="https://github.com/No-Country-simulation/S04-26-Equipo-19-Web-App-Development"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Repository</a
+            >
+            <a class="project-link" href="../index.html#projects"
+              >Back to projects</a
+            >
             <a class="project-link" href="../index.html#contact">Contact</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer"><div class="container"><p>© <span id="currentYear"></span> Lucas Epherra · Portfolio</p></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="currentYear"></span> Lucas Epherra · Portfolio</p>
+      </div>
+    </footer>
     <script src="../js/app.js"></script>
   </body>
 </html>

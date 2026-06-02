@@ -18,8 +18,16 @@
     <meta name="theme-color" content="#F8F5F0" />
 
     <link rel="canonical" href="https://www.lucasepherra.com.ar/es/" />
-    <link rel="alternate" hreflang="en" href="https://www.lucasepherra.com.ar/" />
-    <link rel="alternate" hreflang="es" href="https://www.lucasepherra.com.ar/es/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.lucasepherra.com.ar/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://www.lucasepherra.com.ar/es/"
+    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
@@ -29,7 +37,10 @@
       sizes="32x32"
       href="../assets/favicon/favicon-32x32.png"
     />
-    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -64,8 +75,15 @@
       (() => {
         const storageKey = "portfolio-theme";
         const storedTheme = localStorage.getItem(storageKey);
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : prefersDark ? "dark" : "light";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const theme =
+          storedTheme === "dark" || storedTheme === "light"
+            ? storedTheme
+            : prefersDark
+              ? "dark"
+              : "light";
 
         document.documentElement.dataset.theme = theme;
       })();
@@ -79,60 +97,126 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
   </head>
 
   <body>
-    <header class="nav">
-      <div class="container nav-inner">
-        <a href="#home" class="brand" aria-label="Ir al inicio">
-          <strong>LUCAS EPHERRA</strong>
-          <span>Frontend Developer</span>
+    <header class="site-header" data-site-header data-menu-state="closed">
+      <div class="site-header__inner">
+        <a href="#home" class="site-header__brand" aria-label="Ir al inicio">
+          <span class="site-header__brand-main">LUCAS EPHERRA</span>
+          <span class="site-header__brand-sub">Frontend Developer</span>
         </a>
 
+        <div class="site-header__desktop" aria-label="Primaria">
+          <div class="site-header__desktop-nav">
+            <ul class="site-header__links" aria-label="Navegación principal">
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre mí</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#process">Proceso</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <div class="site-header__controls">
+              <div class="site-header__lang" aria-label="Selector de idioma">
+                <a href="../index.html" hreflang="en" lang="en">EN</a>
+                <a
+                  class="is-active"
+                  href="./index.html"
+                  hreflang="es"
+                  lang="es"
+                  aria-current="page"
+                  >ES</a
+                >
+              </div>
+
+              <button
+                class="site-header__theme"
+                type="button"
+                data-theme-toggle
+                aria-label="Cambiar a modo oscuro"
+                data-dark-label="Oscuro"
+                data-light-label="Claro"
+                data-dark-aria="Cambiar a modo oscuro"
+                data-light-aria="Cambiar a modo claro"
+              >
+                <span
+                  class="site-header__theme-icon"
+                  data-theme-icon
+                  aria-hidden="true"
+                  >☾</span
+                >
+                <span data-theme-label>Oscuro</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
         <button
-          class="menu-btn"
-          id="menuBtn"
+          class="site-header__toggle"
           type="button"
-          aria-label="Abrir menú de navegación"
-          aria-controls="navLinks"
+          data-site-menu-button
           aria-expanded="false"
-          data-menu-label="Menú"
-          data-close-label="Cerrar"
+          aria-controls="site-mobile-menu"
+          aria-label="Abrir menú de navegación"
         >
-          Menú
+          <span class="site-header__toggle-label">Menú</span>
         </button>
 
-        <nav aria-label="Navegación principal">
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#process">Proceso</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        <div class="nav-controls">
-          <div class="language-switch" aria-label="Selector de idioma">
-                    <a href="../index.html" hreflang="en" lang="en">EN</a>
-                    <a class="is-active" href="./index.html" hreflang="es" lang="es" aria-current="page">ES</a>
-                  </div>
+        <div
+          class="site-header__mobile-panel"
+          id="site-mobile-menu"
+          data-site-menu-panel
+          aria-label="Navegación móvil"
+        >
+          <div class="site-header__mobile-inner">
+            <ul class="site-header__mobile-links">
+              <li><a href="#home" data-site-menu-link>Inicio</a></li>
+              <li><a href="#about" data-site-menu-link>Sobre mí</a></li>
+              <li><a href="#services" data-site-menu-link>Servicios</a></li>
+              <li><a href="#process" data-site-menu-link>Proceso</a></li>
+              <li><a href="#projects" data-site-menu-link>Proyectos</a></li>
+              <li><a href="#contact" data-site-menu-link>Contacto</a></li>
+            </ul>
 
-          <button
-            class="theme-toggle"
-            id="themeToggle"
-            type="button"
-            aria-label="Cambiar a modo oscuro"
-            data-dark-label="Oscuro"
-            data-light-label="Claro"
-            data-dark-aria="Cambiar a modo oscuro"
-            data-light-aria="Cambiar a modo claro"
-          >
-            <span class="theme-toggle-icon" aria-hidden="true">☾</span>
-            <span data-theme-label>Oscuro</span>
-          </button>
+            <div class="site-header__mobile-footer">
+              <div class="site-header__lang" aria-label="Selector de idioma">
+                <a href="../index.html" hreflang="en" lang="en">EN</a>
+                <a
+                  class="is-active"
+                  href="./index.html"
+                  hreflang="es"
+                  lang="es"
+                  aria-current="page"
+                  >ES</a
+                >
+              </div>
+
+              <button
+                class="site-header__theme"
+                type="button"
+                data-theme-toggle
+                aria-label="Cambiar a modo oscuro"
+                data-dark-label="Oscuro"
+                data-light-label="Claro"
+                data-dark-aria="Cambiar a modo oscuro"
+                data-light-aria="Cambiar a modo claro"
+              >
+                <span
+                  class="site-header__theme-icon"
+                  data-theme-icon
+                  aria-hidden="true"
+                  >☾</span
+                >
+                <span data-theme-label>Oscuro</span>
+              </button>
+            </div>
+          </div>
         </div>
-      </nav></div>
-</header>
+      </div>
+    </header>
 
     <main>
       <section class="hero container" id="home">
@@ -147,10 +231,10 @@
             </h1>
 
             <p class="hero-description">
-              Soy Lucas Epherra, Frontend Developer. Desarrollo sitios,
-              landings e interfaces web con foco en claridad visual,
-              rendimiento, experiencia de usuario e integración con servicios
-              reales como APIs, formularios, autenticación y bases de datos.
+              Soy Lucas Epherra, Frontend Developer. Desarrollo sitios, landings
+              e interfaces web con foco en claridad visual, rendimiento,
+              experiencia de usuario e integración con servicios reales como
+              APIs, formularios, autenticación y bases de datos.
             </p>
 
             <div class="hero-actions" aria-label="Acciones principales">
@@ -240,11 +324,11 @@
             <p>
               Vengo desarrollando proyectos propios, colaborativos y
               profesionales donde aplico React, Next.js, TypeScript, consumo de
-              APIs REST, autenticación, formularios, rutas protegidas,
-              Supabase, automatizaciones, componentes reutilizables y diseño
-              responsive. Actualmente busco crecer como desarrollador frontend
-              y también ayudar a profesionales y negocios a construir una
-              presencia web clara, funcional y mantenible.
+              APIs REST, autenticación, formularios, rutas protegidas, Supabase,
+              automatizaciones, componentes reutilizables y diseño responsive.
+              Actualmente busco crecer como desarrollador frontend y también
+              ayudar a profesionales y negocios a construir una presencia web
+              clara, funcional y mantenible.
             </p>
 
             <div class="about-meta" aria-label="Tecnologías principales">
@@ -587,10 +671,7 @@
                     Ver sitio
                   </a>
 
-                  <a
-                    class="project-link"
-                    href="./projects/estudio-lachat.html"
-                  >
+                  <a class="project-link" href="./projects/estudio-lachat.html">
                     Caso de estudio
                   </a>
                 </div>
@@ -943,7 +1024,7 @@
       </section>
     </main>
 
-    <div class="image-modal" id="imageModal" aria-hidden="true">
+    <div class="image-modal" id="imageModal" aria-hidden="true" inert>
       <div class="image-modal-backdrop" id="imageModalBackdrop"></div>
 
       <div
